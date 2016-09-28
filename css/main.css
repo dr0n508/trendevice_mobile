@@ -298,10 +298,13 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     height: auto; }
 
 .select-model-product h1 {
-  font-size: 38px;
+  font-size: 35px;
   color: #2889c2;
-  margin: 50px 0 20px;
+  margin: 20px 0;
   text-align: center; }
+.select-model-product .col-xs-6 {
+  padding-right: 2px;
+  padding-left: 2px; }
 
 .header-list-mac {
   font-size: 24px;
@@ -312,23 +315,23 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   display: block; }
 
 .list-models-products li {
-  padding: 3px 5px; }
+  padding: 5px 0;
+  text-align: center; }
   .list-models-products li a {
     font-size: 24px;
     color: #484848;
     background: #EEEEEE;
-    padding: 5px 20px;
+    padding: 20px 0;
     display: block; }
-    .list-models-products li a:hover {
-      color: #FFFFFF;
-      background-color: #2889c2;
-      text-decoration: none; }
 .list-models-products .not-available a {
   color: #b2b3b3;
   pointer-events: none; }
   .list-models-products .not-available a:hover {
     background-color: #EEEEEE;
     color: #b2b3b3; }
+@media only screen and (max-width: 460px) {
+  .list-models-products li a {
+    font-size: 17px; } }
 
 .our-advantages {
   padding: 50px 0 0; }

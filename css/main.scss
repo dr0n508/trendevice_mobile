@@ -430,10 +430,14 @@ $white-color: #FFFFFF;
 
 .select-model-product {
   h1 {
-    font-size: 38px;
+    font-size: 35px;
     color: $blue-color;
-    margin: 50px 0 20px;
+    margin: 20px 0;
     text-align: center;
+  }
+  .col-xs-6 {
+    padding-right: 2px;
+    padding-left: 2px;
   }
 }
 
@@ -449,18 +453,14 @@ $white-color: #FFFFFF;
 
 .list-models-products {
   li {
-    padding: 3px 5px;
+    padding: 5px 0;
+    text-align: center;
     a {
       font-size: 24px;
       color: $dark-gray-color;
       background: $light-gray-color;
-      padding: 5px 20px;
+      padding: 20px 0;
       display: block;
-      &:hover {
-        color: $white-color;
-        background-color: $blue-color;
-        text-decoration: none;
-      }
     }
   }
   .not-available a {
@@ -470,6 +470,9 @@ $white-color: #FFFFFF;
       background-color: $light-gray-color;
       color: #b2b3b3;
     }
+  }
+  @media only screen and (max-width: 460px) {
+    li a { font-size: 17px; }
   }
 }
 
