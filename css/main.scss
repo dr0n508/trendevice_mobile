@@ -474,7 +474,7 @@ $white-color: #FFFFFF;
 }
 
 .our-advantages {
-  padding: 50px 0;
+  padding: 50px 0 0;
   .container {
     background: $light-gray-color;
     padding: 20px;
@@ -486,22 +486,23 @@ $white-color: #FFFFFF;
   }
   li {
     font-size: 17px;
-    padding: 20px 10px 20px 100px;
+    padding: 60px 10px 20px 20px;
+    text-align: center;
   }
   .advantage01 {
-    background: url("../img/advantage01.png") 3% 50% no-repeat;
+    background: url("../img/advantage01.png") 50% 2% no-repeat;
     background-size: 50px;
   }
   .advantage02 {
-    background: url("../img/advantage02.png") 2.2% 50% no-repeat;
+    background: url("../img/advantage02.png") 50% 2% no-repeat;
     background-size: 60px;
   }
   .advantage03 {
-    background: url("../img/advantage03.png") 4% 50% no-repeat;
+    background: url("../img/advantage03.png") 50% 2% no-repeat;
     background-size: 30px;
   }
   .advantage04 {
-    background: url("../img/advantage04.png") 3% 50% no-repeat;
+    background: url("../img/advantage04.png") 50% 2% no-repeat;
     background-size: 50px;
   }
 }
@@ -550,7 +551,6 @@ $white-color: #FFFFFF;
     .offer-wrapper {
       width: 100%;
       padding: 10px 10px 0;
-//      text-align: center;
       h3 {
         font-size: 25px;
       }
@@ -580,37 +580,20 @@ $white-color: #FFFFFF;
   h1 {
     background: url("../img/bg-iphone6.jpg") no-repeat 50% 0%;
     background-size: cover;
-    padding: 20px 20px 100px 20px;
+    padding: 20px 20px 40px 20px;
     margin-bottom: 50px;
     font-size: 44px;
     color: $blue-color;
     font-weight: 600;
   }
-  .info-product {
-    font-weight: 300;
-    font-size: 18px;
-    padding-top: 25px;
-    margin-bottom: 25px;
-  }
-  .model:not(.not-available) img {
-    &:hover {
-      cursor: pointer;
-      -moz-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-      -webkit-transform: scale(1.05);
-      -o-transform: scale(1.05);
-      transform: scale(1.05);
-    }
-  }
   .model.not-available a {
     pointer-events: none;
   }
   .model {
-    padding: 20px 20px;
     .wrap-img-model {
       position: relative;
       display: block;
-      height: 220px;
+      height: 200px;
       img {
         width: auto;
         height: 100%;
@@ -618,7 +601,7 @@ $white-color: #FFFFFF;
       span {
         position: absolute;
         top: -38px;
-        right: 0;
+        right: -4px;
         color: $white-color;
         background: $blue-color;
         border-radius: 50%;
@@ -631,16 +614,28 @@ $white-color: #FFFFFF;
         font-weight: 600;
       }
     }
-    p {
-      font-size: 17px;
-      padding: 15px 0;
-    }
     .small-yellow-btn {
+      margin-top: 20px;
       font-size: 16px;
-      padding: 10px;
+      padding: 5px 10px;
+      display: inline-block;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    .model {
+      padding-left: 5px;
+      padding-right: 5px;
+      .wrap-img-model {
+        height: 120px;
+      }
+      .small-yellow-btn {
+        padding: 5px;
+      }
     }
   }
 }
+
+
 
 /***************************************thanks-message*******************************/
 /************************************************************************************/

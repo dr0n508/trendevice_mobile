@@ -331,7 +331,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     color: #b2b3b3; }
 
 .our-advantages {
-  padding: 50px 0; }
+  padding: 50px 0 0; }
   .our-advantages .container {
     background: #EEEEEE;
     padding: 20px; }
@@ -341,18 +341,19 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     margin-bottom: 10px; }
   .our-advantages li {
     font-size: 17px;
-    padding: 20px 10px 20px 100px; }
+    padding: 60px 10px 20px 20px;
+    text-align: center; }
   .our-advantages .advantage01 {
-    background: url("../img/advantage01.png") 3% 50% no-repeat;
+    background: url("../img/advantage01.png") 50% 2% no-repeat;
     background-size: 50px; }
   .our-advantages .advantage02 {
-    background: url("../img/advantage02.png") 2.2% 50% no-repeat;
+    background: url("../img/advantage02.png") 50% 2% no-repeat;
     background-size: 60px; }
   .our-advantages .advantage03 {
-    background: url("../img/advantage03.png") 4% 50% no-repeat;
+    background: url("../img/advantage03.png") 50% 2% no-repeat;
     background-size: 30px; }
   .our-advantages .advantage04 {
-    background: url("../img/advantage04.png") 3% 50% no-repeat;
+    background: url("../img/advantage04.png") 50% 2% no-repeat;
     background-size: 50px; }
 
 .offer .container {
@@ -410,54 +411,47 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .version-product h1 {
   background: url("../img/bg-iphone6.jpg") no-repeat 50% 0%;
   background-size: cover;
-  padding: 20px 20px 100px 20px;
+  padding: 20px 20px 40px 20px;
   margin-bottom: 50px;
   font-size: 44px;
   color: #2889c2;
   font-weight: 600; }
-.version-product .info-product {
-  font-weight: 300;
-  font-size: 18px;
-  padding-top: 25px;
-  margin-bottom: 25px; }
-.version-product .model:not(.not-available) img:hover {
-  cursor: pointer;
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05); }
 .version-product .model.not-available a {
   pointer-events: none; }
-.version-product .model {
-  padding: 20px 20px; }
-  .version-product .model .wrap-img-model {
-    position: relative;
-    display: block;
-    height: 220px; }
-    .version-product .model .wrap-img-model img {
-      width: auto;
-      height: 100%; }
-    .version-product .model .wrap-img-model span {
-      position: absolute;
-      top: -38px;
-      right: 0;
-      color: #FFFFFF;
-      background: #2889c2;
-      border-radius: 50%;
-      width: 76px;
-      height: 76px;
-      text-align: center;
-      line-height: 76px;
-      font-size: 20px;
-      text-transform: uppercase;
-      font-weight: 600; }
-  .version-product .model p {
-    font-size: 17px;
-    padding: 15px 0; }
-  .version-product .model .small-yellow-btn {
-    font-size: 16px;
-    padding: 10px; }
+.version-product .model .wrap-img-model {
+  position: relative;
+  display: block;
+  height: 200px; }
+  .version-product .model .wrap-img-model img {
+    width: auto;
+    height: 100%; }
+  .version-product .model .wrap-img-model span {
+    position: absolute;
+    top: -38px;
+    right: -4px;
+    color: #FFFFFF;
+    background: #2889c2;
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+    text-align: center;
+    line-height: 76px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600; }
+.version-product .model .small-yellow-btn {
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 5px 10px;
+  display: inline-block; }
+@media only screen and (max-width: 460px) {
+  .version-product .model {
+    padding-left: 5px;
+    padding-right: 5px; }
+    .version-product .model .wrap-img-model {
+      height: 120px; }
+    .version-product .model .small-yellow-btn {
+      padding: 5px; } }
 
 /***************************************thanks-message*******************************/
 /************************************************************************************/
