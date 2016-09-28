@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TrenDevice</title>
+
+    <script src="https://use.fontawesome.com/f0f94a2382.js"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fdt-widget.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="logo"/>
+                </a>
+                <a href="#" class="basket-fa-xs visible-xs"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
+                <!--<a href="#" class="user-fa-xs visible-xs"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a>-->
+
+                <li class="dropdown visible-xs user-fa-xs">
+                    <a href="#" class="dropdown-toggle login-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu menu-login-user">
+                        <li><a href="#">Indirizzi</a></li>
+                        <li><a href="#">Ordini</a></li>
+                        <li><a href="#">Impostazioni</a></li>
+                        <li><a href="#">Il mio usato</a></li>
+                        <li><a href="#">Assistenza</a></li>
+                        <li><a href="#">Disconetti</a></li>
+                    </ul>
+
+                    <ul class="dropdown-menu menu-new-user">
+                        <li class="signin"><a href="#">Accedi</a></li>
+                        <li><a href="#">Registrati</a></li>
+                    </ul>
+                </li>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="home_iphone.html" class="menu-home-products dropdown-toggle" data-toggle="dropdown">iPhone</a>
+                        <ul class="dropdown-menu multi-column columns-2">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="home_iphoneSe.html">iPhone SE</a></li>
+                                        <li><a href="home_iphone6splus.html">iPhone 6s Plus</a></li>
+                                        <li><a href="home_iphone6s.html">iPhone 6s</a></li>
+                                        <li><a href="home_iphone6plus.html">iPhone 6 Plus</a></li>
+                                        <li><a href="home_iphone6.html">iPhone 6</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="home_iphone5s.html">iPhone 5s</a></li>
+                                        <li><a href="home_iphone5c.html">iPhone 5c</a></li>
+                                        <li><a href="home_iphone5.html">iPhone 5</a></li>
+                                        <li><a href="home_iphone4s.html">iPhone 4s</a></li>
+                                        <li><a href="home_iphone4.html">iPhone 4</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="home_ipad.html" class="menu-home-products dropdown-toggle" data-toggle="dropdown">iPad</a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="home_ipad_pro12.html">iPad Pro 12”</a></li>
+                                        <li><a href="home_ipad_pro97.html">iPad Pro 9.7”</a></li>
+                                        <li><a href="home_ipad_air2.html">iPad Air 2</a></li>
+                                        <li><a href="home_ipad_air.html">iPad Air</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="home_ipad_4.html">iPad 4</a></li>
+                                        <li><a href="home_ipad_3.html">iPad 3</a></li>
+                                        <li><a href="home_ipad_2.html">iPad 2</a></li>
+                                        <li><a href="home_ipad_1.html">iPad 1</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="home_ipad_mini4.html">iPad mini 4</a></li>
+                                        <li><a href="home_ipad_mini3.html">iPad mini 3</a></li>
+                                        <li><a href="home_ipad_mini2.html">iPad mini 2</a></li>
+                                        <li><a href="home_ipad_mini1.html">iPad mini 1</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="home_watch.html" class="menu-home-products dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Watch</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product_watchsport.html">Watch Sport</a></li>
+                            <li><a href="product_applewatch.html">Apple Watch</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="sell-btn"><a href="https://www.trendevice.com/vendi.html">Vendi</a></li>
+                    <li><a href="#" class="basket-fa hidden-xs"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a></li>
+                    <li class="dropdown hidden-xs">
+                        <a href="#" class="dropdown-toggle new-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu menu-login-user">
+                            <li><a href="#">Indirizzi</a></li>
+                            <li><a href="#">Ordini</a></li>
+                            <li><a href="#">Impostazioni</a></li>
+                            <li><a href="#">Il mio usato</a></li>
+                            <li><a href="#">Assistenza</a></li>
+                            <li><a href="#">Disconetti</a></li>
+                        </ul>
+                        <ul class="dropdown-menu menu-new-user">
+                            <li class="signin"><a href="#">Accedi</a></li>
+                            <li><a href="#">Registrati</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<section id="iPhone-6splus" class="product-section">
+    <div class="container">
+        <h1>iPHONE 6s Plus 16 Gb</h1>
+        <form action="#">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="col-lg-4 col-md-5 col-sm-5">
+                    <!--start tabs-->
+                    <div>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                                <div class="wrap-img">
+                                    <img src="img/products-img/iPhone/6splus/6splus_grigio-siderale.png">
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="profile">
+                                <div class="wrap-img">
+                                    <img src="img/products-img/iPhone/6splus/6splus_grigio-siderale_b.png">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                                    <img src="img/products-img/iPhone/6splus/6splus_grigio-siderale.png">
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+                                    <img src="img/products-img/iPhone/6splus/6splus_grigio-siderale_b.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--end tabs-->
+                </div>
+                <div class="col-lg-8 col-md-7 col-sm-7">
+                    <div class="wrap-selection" group-radio-inputs>
+                        <p class="label-condition">Scegli il Colore:</p>
+                        <div class="wrap-color-inputs">
+                            <input class="radio-custom-color-input" type="radio" id="grigio-siderale" name="color-product" value="Grigio Siderale"/>
+                            <label class="radio-custom-color-label" for="grigio-siderale"><span></span></label>
+
+                            <input class="radio-custom-color-input" type="radio" id="argento" name="color-product" value="Argento"/>
+                            <label class="radio-custom-color-label" for="argento"><span></span></label>
+
+                            <input class="radio-custom-color-input" type="radio" id="oro" name="color-product" value="Oro"/>
+                            <label class="radio-custom-color-label" for="oro"><span></span></label>
+
+                            <input class="radio-custom-color-input" type="radio" id="ororosa" name="color-product" value="Oro Rosa"/>
+                            <label class="radio-custom-color-label" for="ororosa"><span></span></label>
+                        </div>
+                        <span class="selected-color"></span>
+                    </div>
+
+                    <div class="wrap-selection" group-radio-inputs disabled>
+                        <p class="label-condition">Scegli le Condizioni:
+                            <a class="information-condition" href="#" data-toggle="modal" data-target="#popover-condition">i</a>
+                            <a class="link-information-condition" href="#" data-toggle="modal" data-target="#popover-condition">clicca qui per saperne di più</a></p>
+                        <div class="wrap-input-condition">
+                            <input class="radio-custom-btn-input" type="radio" id="good-condition" name="condition-phone" value="good-condition"/>
+                            <label class="radio-custom-btn-label" for="good-condition"><span>buono</span></label>
+
+                            <input class="radio-custom-btn-input" disabled type="radio" id="excellent-condition" name="condition-phone" value="excellent-condition"/>
+                            <label class="radio-custom-btn-label" for="excellent-condition"><span>ottimo</span></label>
+
+                            <input class="radio-custom-btn-input" type="radio" id="perfect-condition" name="condition-phone" value="perfect-condition"/>
+                            <label class="radio-custom-btn-label" for="perfect-condition"><span>perfetto</span></label>
+                        </div>
+                    </div>
+                    <ul class="list-description-product">
+                        <li>Cavo USB e Alimentatore: Originali Apple</li>
+                        <li>Scatola: Scatola TrenDevice designed for iPhone</li>
+                        <li>Batteria: In stato ottimale</li>
+                        <li>Garanzia: Garanzia 2 anni TrenDevice</li>
+                        <li>Diritto di Recesso: 14 giorni dalla ricezione zero costi per te</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 wrap-buy">
+                <label for="number-product">Quantità:</label>
+                <select name="number-product" id="number-product">
+                    <option selected value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                <p class="price-product sale">
+                    <span class="old-price">
+                        <span class="price">599.90€</span>
+                        <span class="discount-percent">-20%</span>
+                    </span>
+                    519.90€
+                </p>
+                <button class="buy-btn" disabled type="submit">COMPRA ADESSO</button>
+                <ul class="list-bonus">
+                    <li>Garanzia 2 anni</li>
+                    <li>Pagamento alla consegna zero costi</li>
+                    <li>Soddisfatto o Rimborsato 100%</li>
+                    <li>Reso gratis entro 14 giorni</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="our-advantages">
+    <div class="container">
+        <h2>I VANTAGGI TRENDEVICE:</h2>
+        <ul>
+            <li class="advantage01">
+                Il funzionamento di ogni iPhone è garantito al 100% da rigorosi test tecnici: il personale specializzato di
+                TrenDevice effettua 37 test su ogni dispositivo e cancella completamente i dati del precedente utilizzatore.
+            </li>
+            <li class="advantage02">
+                Risparmi fino al 30% rispetto ad un prodotto nuovo
+            </li>
+            <li class="advantage03">
+                Puoi trovare iPhone di serie precedenti non più in commercio sul mercato del nuovo: se non ti è necessario l’ultimo modello
+                e puoi risparmiare ancora di più, meglio no?
+            </li>
+            <li class="advantage04">
+                Contribuisci a salvaguardare l’ambiente con un consumo hi-tech consapevole. Ad esempio, ogni volta che un consumatore
+                acquista un iPhone di seconda mano, il Pianeta ringrazia per aver evitato tra 60 e 90 Kg di emissioni di CO2.
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="offer">
+    <div class="container">
+        <div class="offer-for-you">
+            <div class="slide">
+                <div class="img-wrapper pull-left">
+                    <img src="img/offer1.png" alt="offer1"/>
+                </div>
+                <div class="offer-wrapper pull-left">
+                    <h3>iPad Air</h3>
+                    <a href="#" class="small-yellow-btn">scopri di più</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="img-wrapper pull-left">
+                    <img src="img/offer2.png" alt="offer2"/>
+                </div>
+                <div class="offer-wrapper pull-left">
+                    <h3>MacBook Air</h3>
+                    <a href="#" class="small-yellow-btn">scopri di più</a>
+                </div>
+            </div>
+            <div class="slide quick-offer">
+                <div class="offer-wrapper">
+                    <h3>Acquistiamo il tuo iDevice</h3>
+                </div>
+                <div class="img-wrapper-quick-offer clearfix">
+                    <img src="img/quick-offer.jpg" alt="quic-offer"/>
+                </div>
+                <a href="#" class="small-yellow-btn">Scopri la quotazione <br/> in 1 minuto</a>
+            </div>
+            <div class="slide">
+                <div class="img-wrapper pull-left">
+                    <img src="img/offer1.png" alt="offer1"/>
+                </div>
+                <div class="offer-wrapper pull-left">
+                    <h3>iPad Air</h3>
+                    <a href="#" class="small-yellow-btn">scopri di più</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="img-wrapper pull-left">
+                    <img src="img/offer2.png" alt="offer2"/>
+                </div>
+                <div class="offer-wrapper pull-left">
+                    <h3>MacBook Air</h3>
+                    <a href="#" class="small-yellow-btn">scopri di più</a>
+                </div>
+            </div>
+            <div class="slide quick-offer">
+                <div class="offer-wrapper">
+                    <h3>Acquistiamo il tuo iDevice</h3>
+                </div>
+                <div class="img-wrapper-quick-offer clearfix">
+                    <img src="img/quick-offer.jpg" alt="quic-offer"/>
+                </div>
+                <a href="#" class="small-yellow-btn">Scopri la quotazione <br/> in 1 minuto</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="advantages">
+    <div class="container">
+        <ul>
+            <li class="col-sm-3">
+                <img src="img/money-back-ico.png" alt="money-back"/>
+                <p>soddisfatti o rimborsati</p>
+            </li>
+            <li class="col-sm-3">
+                <img src="img/satisfied-customers-ico.png" alt="satisfied-customers"/>
+                <p>99% clienti soddisfatti</p>
+            </li>
+            <li class="col-sm-3">
+                <img src="img/warranty-ico.png" alt="warranty"/>
+                <p>garanzia 2 anni</p>
+            </li>
+            <li class="col-sm-3">
+                <img src="img/free14-ico.png" alt="free14"/>
+                <p>reso gratis 14 giorni</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-md-2 footer-block">
+                <ul>
+                    <li><a href="#">Chi siamo</a></li>
+                    <li><a href="#">Info e Contatti</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 footer-block">
+                <ul>
+                    <li><a href="#">Condizioni di Privacy</a></li>
+                    <li><a href="#">Spedizioni e Resi</a></li>
+                    <li><a href="#">Eco- friendly</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 footer-block">
+                <ul>
+                    <li><a href="#">Vendi</a></li>
+                    <li><a href="#">I Vantaggi TrenDevice</a></li>
+                    <li><a href="#">Aziende</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 social footer-block">
+                <p>Seguici su:</p>
+                <ul>
+                    <li>
+                        <a class="social-link" href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a class="social-link" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a class="social-link" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a class="social-link" href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rewards col-md-4 footer-block">
+                <div class="left-block col-md-4 col-md-offset-2">
+                    <img src="img/sigilloSI.PNG" alt="siglito"/>
+                </div>
+                <div class="right-block col-md-6">
+
+                    <!--widget code taken from the site http://www.trendevice.com/-->
+                    <div class="widget_merchant">
+                        <div class="fdt_widget">
+                            <a href="http://widget.zoorate.com/go.php?function=feed_redirect&amp;type=merchant&amp;widget_id=37fb954ca51520a8&amp;rwu=aHR0cDovL3d3dy5mZWVkYXR5LmNvbS9mZWVkYXR5L3Jldmlld3MvdHJlbmRldmljZQ==" target="_blank">
+                                <div class="fdt_widget_wrapper">
+
+                                    <div class="fdt_estimation">
+                                        <img src="//widget.zoorate.com/images/widget_v3/bkgd_Silver.jpg" alt="" class="bkgd_est">
+                                        <div class="txt_est">OTTIMO</div></div>
+
+                                    <div class="fdt_ratx_star">
+                                        <img src="//widget.zoorate.com/rating/rate-small-4.5.png" alt="voto">
+
+                                    </div>
+
+                                    <div class="fdt_ratx_num">
+                                        <div class="fdt_ratx">4.5<span class="fdt_sum">/5</span></div>
+                                    </div>
+
+                                    <div class="fdt_txt_opinions">recensioni</div>
+
+                                    <div class="fdt_num_opinions">
+                                        <div class="fdt_all">701</div>
+                                    </div>
+
+                                    <div class="fdt_logo"></div>
+
+                                    <div class="fdt_reviews">
+                                        <div class="fdt_title_reviews">Leggi le recensioni
+                                            <!--<img src="//c.zoorate.com/cs.php?action=w_merchant&value=10213689" alt="" title="" style="display: none;" width=1 height=1 />-->
+                                        </div>
+                                        <hr>
+                                        <div class="fdt_rew">
+                                            Veloci e professionali
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--END widget code -->
+                    <img src="img/associato-confindustria.png" alt="associato-confindustria"/>
+                </div>
+            </div>
+        </div>
+        <div class="payment-copywrigth row">
+            <div class="payment col-md-6">
+                <span>ACQUISTI SICURI ONLINE CON</span>
+                <ul>
+                    <li><a href="#"><img src="img/payment-visa.jpg" alt="visa"/></a></li>
+                    <li><a href="#"><img src="img/payment-amex.jpg" alt="amex"/></a></li>
+                    <li><a href="#"><img src="img/payment-mc.jpg" alt="mc"/></a></li>
+                    <li><a href="#"><img src="img/payment-maestro.jpg" alt="maestro"/></a></li>
+                    <li><a href="#"><img src="img/payment-visaE.jpg" alt="visa-electron"/></a></li>
+                    <li><a href="#"><img src="img/payment-paypal.jpg" alt="paypal"/></a></li>
+                    <li><a href="#"><img src="img/payment-postpay.jpg" alt="postpay"/></a></li>
+                </ul>
+            </div>
+            <div class="privacy-policy col-md-6 clearfix">
+                <p>Panta Rei S.r.l. - P.I. 02162920645 - Cap. Soc. 100.000 € i.v. - Privacy Policy</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="popover-condition" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span class="fa fa-times fa-lg" aria-hidden="true"></span></button>
+                <h4 class="modal-title text-center" id="myModalLabel">Come scegliere le condizioni?</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <ul class="clearfix">
+                        <li class="col-sm-4">
+                            <h5>Come nuovo</h5>
+                            <div class="wrap-img">
+                                <img src="http://placehold.it/350x250">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obest laborum.</p>
+                        </li>
+                        <li class="col-sm-4">
+                            <h5>Ottimo</h5>
+                            <div class="wrap-img">
+                                <img src="http://placehold.it/350x250">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obest laborum.</p>
+                        </li>
+                        <li class="col-sm-4">
+                            <h5>Buono</h5>
+                            <div class="wrap-img">
+                                <img src="http://placehold.it/350x250">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obest laborum.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery.bxslider.min.js"></script>
+
+<!--Custom JS-->
+<script src="js/main.js"></script>
+
+</body>
+</html>
