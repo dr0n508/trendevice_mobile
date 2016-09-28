@@ -210,7 +210,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   color: #2889c2;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  padding: 0 20px; }
 .offer-first-page p {
   font-size: 18px; }
 .offer-first-page ul {
