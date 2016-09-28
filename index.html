@@ -8,7 +8,7 @@
     <title>TrenDevice</title>
 
     <script src="https://use.fontawesome.com/f0f94a2382.js"></script>
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <!--<link href="css/jquery.bxslider.css" rel="stylesheet" />-->
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,19 +29,18 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
-                    <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-                    <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-times fa-2x" aria-hidden="true"></i>
                 </button>
                 <a class="navbar-brand" href="index.html">
                     <img src="img/logo.png" alt="logo"/>
                 </a>
-                <a href="#" class="basket-fa-xs visible-xs"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
-                <!--<a href="#" class="user-fa-xs visible-xs"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a>-->
+                <a href="#" class="basket-fa-xs visible-xs"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
 
                 <li class="dropdown visible-xs user-fa-xs">
-                    <a href="#" class="dropdown-toggle login-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a>
+                    <a href="#" class="dropdown-toggle login-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
                     <ul class="dropdown-menu menu-login-user">
                         <li><a href="#">Indirizzi</a></li>
                         <li><a href="#">Ordini</a></li>
@@ -126,9 +125,9 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="sell-btn"><a href="https://www.trendevice.com/vendi.html">Vendi</a></li>
-                    <li><a href="#" class="basket-fa hidden-xs"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="basket-fa hidden-xs"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a></li>
                     <li class="dropdown hidden-xs">
-                        <a href="#" class="dropdown-toggle new-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a>
+                        <a href="#" class="dropdown-toggle new-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu menu-login-user">
                             <li><a href="#">Indirizzi</a></li>
                             <li><a href="#">Ordini</a></li>
@@ -147,195 +146,152 @@
         </div><!-- /.container-fluid -->
     </nav>
 </header>
-<section class="banner-section">
+
+<section class="offer-first-page">
     <div class="container">
-        <h2>Fatti un regalo!</h2>
-        <p>iPhone 6s Usato Garantito <br/><span>a partire da</span> 664,90€</p>
-        <a class="big-yellow-btn" href="#">Compa Adesso</a>
-        <div class="logo-gray"><img src="img/logo-gray.png" alt="logo"/></div>
+        <h2>Trendevice offre le migliori
+            occasioni per acquistare il tuo
+            prossimo iPhone ricondizionato</h2>
+        <p>Trendevice è il negozio online n°1 in Italia per trovare
+            ed acquistare iPhone ricondizionati e garantiti. Sul
+            nostro sito troverai infatti offerte speciali e deal grazie
+            ai quali potrai:</p>
+        <ul>
+            <li>Risparmiare sul tuo prossimo acquisto iPhone</li>
+            <li>Avere la garanzia per ben 2 anni su ogni prodotto</li>
+            <li>La certezza di funzionamento data dai 37 test tecnici
+                condotti</li>
+            <li>La garanzia soddisfatto o 100% rimborsato</li>
+            <li>Reso gratuito entro 14 giorni</li>
+            <li>Spedizioni in contrassegno senza costi extra</li>
+        </ul>
     </div>
 </section>
 
 <section class="our-products">
-    <div class="container">
         <h1>QUALE iDEVICE STAI CERCANDO?</h1>
         <ul class="clearfix">
-            <li class="product-iphone col-md-4">
-                <div class="wrap-img">
+            <li class="product-iphone col-xs-12">
+                <div class="wrap-img col-xs-6">
                     <a href="home_iphone.html"><img src="img/product-iphone.png" alt="iphone"/></a>
                 </div>
-                <a class="small-blue-btn" href="home_iphone.html">iPhone</a>
+                <div class="col-xs-6">
+                    <a class="small-blue-btn" href="home_iphone.html">iPhone</a>
+                </div>
             </li>
-            <li class="product-ipad col-md-4">
-                <div class="wrap-img">
+            <li class="product-ipad col-xs-12">
+                <div class="wrap-img col-xs-6">
                     <a href="home_ipad.html"><img src="img/product-ipad.png" alt="iphone"/></a>
                 </div>
-                <a class="small-blue-btn" href="home_ipad.html">iPad</a>
+                <div class="col-xs-6">
+                    <a class="small-blue-btn" href="home_ipad.html">iPad</a>
+                </div>
             </li>
-            <!--<li class="product-mac col-md-3">-->
-                <!--<div class="wrap-img">-->
-                    <!--<a href="home_mac.html"><img src="img/product-macbook.png" alt="iphone"/></a>-->
-                <!--</div>-->
-                <!--<a class="small-blue-btn" href="home_mac.html">Mac</a>-->
-            <!--</li>-->
-            <li class="product-Watch col-md-4">
-                <div class="wrap-img">
+            <li class="product-Watch col-xs-12">
+                <div class="wrap-img col-xs-6">
                     <a href="home_watch.html"><img src="img/product-Watch.png" alt="iphone"/></a>
                 </div>
-                <a class="small-blue-btn" href="home_watch.html">Watch</a>
+                <div class="col-xs-6">
+                    <a class="small-blue-btn" href="home_watch.html">Watch</a>
+                </div>
             </li>
         </ul>
-    </div>
 </section>
 
-<section class="about-us">
-    <div class="container">
-        <h2>DICONO DI NOI</h2>
-        <div class="slider-about-us">
-            <div class="slide">
-                <a href="">
-                    <img src="img/aboute-us1.png">
-                    <div class="hide-block">
-                        <p>luca dice: <br/>
-                            “Lorem Ipsum doloret sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem”</p>
+<section class="reward">
+    <!--widget code taken from the site http://www.trendevice.com/-->
+    <div class="widget_merchant">
+        <div class="fdt_widget">
+            <a href="http://widget.zoorate.com/go.php?function=feed_redirect&amp;type=merchant&amp;widget_id=37fb954ca51520a8&amp;rwu=aHR0cDovL3d3dy5mZWVkYXR5LmNvbS9mZWVkYXR5L3Jldmlld3MvdHJlbmRldmljZQ==" target="_blank">
+                <div class="fdt_widget_wrapper">
+
+                    <div class="fdt_estimation">
+                        <img src="//widget.zoorate.com/images/widget_v3/bkgd_Silver.jpg" alt="" class="bkgd_est">
+                        <div class="txt_est">OTTIMO</div></div>
+
+                    <div class="fdt_ratx_star">
+                        <img src="//widget.zoorate.com/rating/rate-small-4.5.png" alt="voto">
+
                     </div>
-                </a>
-            </div>
-            <div class="slide">
-                <a href="">
-                    <img src="img/aboute-us2.png">
-                    <div class="hide-block">
-                        <p>luca dice: <br/>
-                            “Lorem Ipsum doloret sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem”</p>
+
+                    <div class="fdt_ratx_num">
+                        <div class="fdt_ratx">4.5<span class="fdt_sum">/5</span></div>
                     </div>
-                </a>
-            </div>
-            <div class="slide">
-                <a href="">
-                    <img src="img/aboute-us3.png">
-                    <div class="hide-block">
-                        <p>luca dice: <br/>
-                            “Lorem Ipsum doloret sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem”</p>
+
+                    <div class="fdt_txt_opinions">recensioni</div>
+
+                    <div class="fdt_num_opinions">
+                        <div class="fdt_all">701</div>
                     </div>
-                </a>
-            </div>
-            <div class="slide">
-                <a href="">
-                    <img src="img/aboute-us4.png">
-                    <div class="hide-block">
-                        <p>luca dice: <br/>
-                            “Lorem Ipsum doloret sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem”</p>
+
+                    <div class="fdt_logo"></div>
+
+                    <div class="fdt_reviews">
+                        <div class="fdt_title_reviews">Leggi le recensioni
+                            <!--<img src="//c.zoorate.com/cs.php?action=w_merchant&value=10213689" alt="" title="" style="display: none;" width=1 height=1 />-->
+                        </div>
+                        <hr>
+                        <div class="fdt_rew">
+                            Veloci e professionali
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="slide">
-                <a href="">
-                    <img src="img/aboute-us5.png">
-                    <div class="hide-block">
-                        <p>luca dice: <br/>
-                            “Lorem Ipsum doloret sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem”</p>
-                    </div>
-                </a>
-            </div>
-            <div class="slide">
-                <a href="">
-                    <img src="img/aboute-us1.png">
-                    <div class="hide-block">
-                        <p>luca dice: <br/>
-                            “Lorem Ipsum doloret sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem”</p>
-                    </div>
-                </a>
-            </div>
-            <div class="slide">
-                <a href="">
-                    <img src="img/aboute-us2.png">
-                    <div class="hide-block">
-                        <p>luca dice: <br/>
-                            “Lorem Ipsum doloret sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem”</p>
-                    </div>
-                </a>
-            </div>
-            <div class="slide">
-                <a href="">
-                    <img src="img/aboute-us3.png">
-                    <div class="hide-block">
-                        <p>luca dice: <br/>
-                            “Lorem Ipsum doloret sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem”</p>
-                    </div>
-                </a>
-            </div>
-            <div class="slide">
-                <a href="">
-                    <img src="img/aboute-us4.png">
-                    <div class="hide-block">
-                        <p>luca dice: <br/>
-                            “Lorem Ipsum doloret sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem”</p>
-                    </div>
-                </a>
-            </div>
-            <div class="slide">
-                <a href="">
-                    <img src="img/aboute-us5.png">
-                    <div class="hide-block">
-                        <p>luca dice: <br/>
-                            “Lorem Ipsum doloret sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolorem”</p>
-                    </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </div>
+    <!--END widget code -->
 </section>
 
 <section class="advantages">
     <div class="container">
+        <h2>Perchè facciamo la differenza rispetto i concorrenti</h2>
         <ul>
-            <li class="col-sm-3">
+            <li class="col-xs-6">
                 <img src="img/money-back-ico.png" alt="money-back"/>
                 <p>soddisfatti o rimborsati</p>
             </li>
-            <li class="col-sm-3">
+            <li class="col-xs-6">
                 <img src="img/satisfied-customers-ico.png" alt="satisfied-customers"/>
                 <p>99% clienti soddisfatti</p>
             </li>
-            <li class="col-sm-3">
+            <li class="col-xs-6">
                 <img src="img/warranty-ico.png" alt="warranty"/>
                 <p>garanzia 2 anni</p>
             </li>
-            <li class="col-sm-3">
+            <li class="col-xs-6">
                 <img src="img/free14-ico.png" alt="free14"/>
                 <p>reso gratis 14 giorni</p>
+            </li>
+            <li class="col-xs-6">
+                <img src="img/37test-ico.png" alt="37test"/>
+                <p>37 test su ogni iDevice</p>
+            </li>
+            <li class="col-xs-6">
+                <img src="img/originalApple-ico.png" alt="originalApple"/>
+                <p>accessori originali Apple</p>
             </li>
         </ul>
     </div>
 </section>
 
+
+<div class="button-up text-center">
+    <i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i>
+    <p>TORNA SU</p>
+</div>
+
 <footer>
     <div class="container clearfix">
         <div class="row">
-            <div class="col-md-2 footer-block">
+            <div class="col-xs-6 footer-block">
                 <ul>
                     <li><a href="#">Chi siamo</a></li>
                     <li><a href="#">Info e Contatti</a></li>
-                    <li><a href="#">Media</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2 footer-block">
-                <ul>
-                    <li><a href="#">Condizioni di Privacy</a></li>
                     <li><a href="#">Spedizioni e Resi</a></li>
-                    <li><a href="#">Eco- friendly</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2 footer-block">
-                <ul>
                     <li><a href="#">Vendi</a></li>
-                    <li><a href="#">I Vantaggi TrenDevice</a></li>
-                    <li><a href="#">Aziende</a></li>
                 </ul>
             </div>
-            <div class="col-md-2 social footer-block">
-                <p>Seguici su:</p>
+            <div class="col-xs-6 social footer-block">
                 <ul>
                     <li>
                         <a class="social-link" href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
@@ -351,73 +307,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="rewards col-md-4 footer-block">
-                <div class="left-block col-md-4 col-md-offset-2">
-                    <img src="img/sigilloSI.PNG" alt="siglito"/>
-                </div>
-                <div class="right-block col-md-6">
-
-                    <!--widget code taken from the site http://www.trendevice.com/-->
-                    <div class="widget_merchant">
-                        <div class="fdt_widget">
-                            <a href="http://widget.zoorate.com/go.php?function=feed_redirect&amp;type=merchant&amp;widget_id=37fb954ca51520a8&amp;rwu=aHR0cDovL3d3dy5mZWVkYXR5LmNvbS9mZWVkYXR5L3Jldmlld3MvdHJlbmRldmljZQ==" target="_blank">
-                                <div class="fdt_widget_wrapper">
-
-                                    <div class="fdt_estimation">
-                                        <img src="//widget.zoorate.com/images/widget_v3/bkgd_Silver.jpg" alt="" class="bkgd_est">
-                                        <div class="txt_est">OTTIMO</div></div>
-
-                                    <div class="fdt_ratx_star">
-                                        <img src="//widget.zoorate.com/rating/rate-small-4.5.png" alt="voto">
-
-                                    </div>
-
-                                    <div class="fdt_ratx_num">
-                                        <div class="fdt_ratx">4.5<span class="fdt_sum">/5</span></div>
-                                    </div>
-
-                                    <div class="fdt_txt_opinions">recensioni</div>
-
-                                    <div class="fdt_num_opinions">
-                                        <div class="fdt_all">701</div>
-                                    </div>
-
-                                    <div class="fdt_logo"></div>
-
-                                    <div class="fdt_reviews">
-                                        <div class="fdt_title_reviews">Leggi le recensioni
-                                            <!--<img src="//c.zoorate.com/cs.php?action=w_merchant&value=10213689" alt="" title="" style="display: none;" width=1 height=1 />-->
-                                        </div>
-                                        <hr>
-                                        <div class="fdt_rew">
-                                            Veloci e professionali
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!--END widget code -->
-                    <img src="img/associato-confindustria.png" alt="associato-confindustria"/>
-                </div>
-            </div>
-        </div>
-            <div class="payment-copywrigth row">
-                <div class="payment col-md-6">
-                    <span>ACQUISTI SICURI ONLINE CON</span>
-                    <ul>
-                        <li><a href="#"><img src="img/payment-visa.jpg" alt="visa"/></a></li>
-                        <li><a href="#"><img src="img/payment-amex.jpg" alt="amex"/></a></li>
-                        <li><a href="#"><img src="img/payment-mc.jpg" alt="mc"/></a></li>
-                        <li><a href="#"><img src="img/payment-maestro.jpg" alt="maestro"/></a></li>
-                        <li><a href="#"><img src="img/payment-visaE.jpg" alt="visa-electron"/></a></li>
-                        <li><a href="#"><img src="img/payment-paypal.jpg" alt="paypal"/></a></li>
-                        <li><a href="#"><img src="img/payment-postpay.jpg" alt="postpay"/></a></li>
-                    </ul>
-                </div>
-            <div class="privacy-policy col-md-6 clearfix">
-                <p>Panta Rei S.r.l. - P.I. 02162920645 - Cap. Soc. 100.000 € i.v. - Privacy Policy</p>
-            </div>
         </div>
     </div>
 </footer>
@@ -427,7 +316,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 
-<script src="js/jquery.bxslider.min.js"></script>
+<!--<script src="js/jquery.bxslider.min.js"></script>-->
 
 <!--Custom JS-->
 <script src="js/main.js"></script>
