@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TrenDevice</title>
+
+    <script src="https://use.fontawesome.com/f0f94a2382.js"></script>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fdt-widget.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png" alt="logo"/>
+                </a>
+                <a href="#" class="basket-fa-xs visible-xs"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a>
+                <!--<a href="#" class="user-fa-xs visible-xs"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a>-->
+
+                <li class="dropdown visible-xs user-fa-xs">
+                    <a href="#" class="dropdown-toggle login-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a>
+                    <ul class="dropdown-menu menu-login-user">
+                        <li><a href="#">Indirizzi</a></li>
+                        <li><a href="#">Ordini</a></li>
+                        <li><a href="#">Impostazioni</a></li>
+                        <li><a href="#">Il mio usato</a></li>
+                        <li><a href="#">Assistenza</a></li>
+                        <li><a href="#">Disconetti</a></li>
+                    </ul>
+
+                    <ul class="dropdown-menu menu-new-user">
+                        <li class="signin"><a href="#">Accedi</a></li>
+                        <li><a href="#">Registrati</a></li>
+                    </ul>
+                </li>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="home_iphone.html" class="menu-home-products dropdown-toggle" data-toggle="dropdown">iPhone</a>
+                        <ul class="dropdown-menu multi-column columns-2">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="home_iphoneSe.html">iPhone SE</a></li>
+                                        <li><a href="home_iphone6splus.html">iPhone 6s Plus</a></li>
+                                        <li><a href="home_iphone6s.html">iPhone 6s</a></li>
+                                        <li><a href="home_iphone6plus.html">iPhone 6 Plus</a></li>
+                                        <li><a href="home_iphone6.html">iPhone 6</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="home_iphone5s.html">iPhone 5s</a></li>
+                                        <li><a href="home_iphone5c.html">iPhone 5c</a></li>
+                                        <li><a href="home_iphone5.html">iPhone 5</a></li>
+                                        <li><a href="home_iphone4s.html">iPhone 4s</a></li>
+                                        <li><a href="home_iphone4.html">iPhone 4</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="home_ipad.html" class="menu-home-products dropdown-toggle" data-toggle="dropdown">iPad</a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="home_ipad_pro12.html">iPad Pro 12”</a></li>
+                                        <li><a href="home_ipad_pro97.html">iPad Pro 9.7”</a></li>
+                                        <li><a href="home_ipad_air2.html">iPad Air 2</a></li>
+                                        <li><a href="home_ipad_air.html">iPad Air</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="home_ipad_4.html">iPad 4</a></li>
+                                        <li><a href="home_ipad_3.html">iPad 3</a></li>
+                                        <li><a href="home_ipad_2.html">iPad 2</a></li>
+                                        <li><a href="home_ipad_1.html">iPad 1</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="multi-column-dropdown">
+                                        <li><a href="home_ipad_mini4.html">iPad mini 4</a></li>
+                                        <li><a href="home_ipad_mini3.html">iPad mini 3</a></li>
+                                        <li><a href="home_ipad_mini2.html">iPad mini 2</a></li>
+                                        <li><a href="home_ipad_mini1.html">iPad mini 1</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="home_watch.html" class="menu-home-products dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Watch</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="product_watchsport.html">Watch Sport</a></li>
+                            <li><a href="product_applewatch.html">Apple Watch</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="sell-btn"><a href="https://www.trendevice.com/vendi.html">Vendi</a></li>
+                    <li><a href="#" class="basket-fa hidden-xs"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a></li>
+                    <li class="dropdown hidden-xs">
+                        <a href="#" class="dropdown-toggle new-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu menu-login-user">
+                            <li><a href="#">Indirizzi</a></li>
+                            <li><a href="#">Ordini</a></li>
+                            <li><a href="#">Impostazioni</a></li>
+                            <li><a href="#">Il mio usato</a></li>
+                            <li><a href="#">Assistenza</a></li>
+                            <li><a href="#">Disconetti</a></li>
+                        </ul>
+                        <ul class="dropdown-menu menu-new-user">
+                            <li class="signin"><a href="#">Accedi</a></li>
+                            <li><a href="#">Registrati</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+
+<div class="container">
+    <div class="information col-md-9">
+        <form action="#">
+            <section class="information-client">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading open" role="tab" id="headingZero">
+                    <h2 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                            <span>1</span>Email
+                        </a>
+                    </h2>
+                </div>
+                <div id="collapseZero" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingZero">
+                    <div class="panel-body authentication">
+                        <div class="wrap-inputs">
+                            <form action="">
+                                <p class="header-input">Inserisci la tua email per continuare con l’ordine</p>
+                                <!--<p class="header-input">Email:</p>-->
+                                <div>
+                                    <label for="email-client">Email:</label>
+                                    <input type="email" id="email-client"/>
+                                </div>
+                                <input class="small-gray-btn" type="submit" value="Avanti"/>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+                <div class="panel panel-default">
+                    <div class="panel-heading open" role="tab" id="headingOne">
+                        <h2 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span>2</span>Registrati
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body authentication facebook-block">
+                            <div class="wrap-inputs col-md-6">
+                                <form action="">
+                                    <p class="header-input">Sei un nuovo utente? Registrati ora</p>
+                                    <div>
+                                        <label for="new-password-client">Scegli la tua password:</label>
+                                        <input type="text" id="new-password-client"/>
+                                    </div>
+                                    <div>
+                                        <label for="new-confirm-password">Conferma la tua password:</label>
+                                        <input type="text" id="new-confirm-password"/>
+                                    </div>
+                                    <input class="small-gray-btn" type="submit" value="Continua"/>
+                                </form>
+                            </div>
+                            <div class="wrap-inputs col-md-6">
+                                <a href="#" class="facebook-btn"><i class="fa fa-facebook fa-lg"></i><span>Accedi con <b>Facebook</b></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading open" role="tab" id="headingTwo">
+                    <h2 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span>3</span>Indirizzo di fatturazione
+                        </a>
+                    </h2>
+                </div>
+                <div id="collapseTwo" user-login-block2 class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        <div class="wrap-custom-input">
+                            <input class="radio-custom-card" type="radio" id="address-available" name="address-client" value="address-available"/>
+                            <label class="radio-custom-card-label" for="address-available"></label>
+                            <label class="header-input" for="address-available">Utilizza il tuo indirizzo</label>
+                        </div>
+                        <address>
+                            <p>Alice Lolli</p>
+                            <p>Via costozza 40032 Camugnano (BO) - Italy</p>
+                            <p>Tel. 3347312434</p>
+                            <p>CF:DKDDDKDDKF</p>
+                        </address>
+                        <div class="wrap-custom-input">
+                            <input class="radio-custom-card" type="radio" id="address-new" name="address-client" value="address-new"/>
+                            <label class="radio-custom-card-label" for="address-new"></label>
+                            <label class="header-input" for="address-new">Cambia i dati di fatturazione</label>
+                        </div>
+                        <div id="inputs-payment-information">
+                            <div class="wrap-inputs col-lg-6">
+                                <label class="label-small" for="name-client">Nome:</label>
+                                <input type="text" name="name-client" id="name-client"/>
+
+                                <label class="label-small" for="address-client">Indirizzo:</label>
+                                <input type="text" name="address-client" id="address-client"/>
+
+                                <label class="label-small" for="city-client">Città:</label>
+                                <input type="text" name="city-client" id="city-client"/>
+
+                                <label class="label-small" for="state-client">Stato:</label>
+                                <input type="text" name="state-client" id="state-client"/>
+
+                                <label class="label-small" for="phone-client">Telefono:</label>
+                                <input type="text" name="phone-client" id="phone-client"/>
+
+                                <label class="label-small" for="tax-client">Codice fiscale:</label>
+                                <input type="text" name="tax-client" id="tax-client"/>
+                            </div>
+
+                            <div class="wrap-inputs col-lg-6">
+                                <label class="label-small" for="surname-client">Cognome:</label>
+                                <input type="text" name="surname-client" id="surname-client"/>
+
+                                <label class="label-small" for="post-code-client">Cap:</label>
+                                <input type="text" name="post-code-client" id="post-code-client"/>
+
+                                <label class="label-small" for="province-client">Provincia:</label>
+                                <input type="text" name="province-client" id="province-client"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h2 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="disabled" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span>4</span>Indirizzo di spedizione
+                            </a>
+                        </h2>
+                    </div>
+
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <div class="wrap-custom-input">
+                                <input class="radio-custom-card" type="radio" id="delivery-address-available" name="delivery-address-client" value="delivery-address-available"/>
+                                <label class="radio-custom-card-label" for="delivery-address-available"></label>
+                                <label class="header-input" for="delivery-address-available">Utilizza il tuo indirizzo</label>
+                            </div>
+                            <address><p>Alice Lolli</p>
+                                <p>Via costozza</p>
+                                <p>40032 Camugnano (BO) - Italy</p>
+                                <p>Tel. 3347312434</p>
+                            </address>
+                            <div class="wrap-custom-input">
+                                <input class="radio-custom-card" type="radio" id="delivery-address-new" name="delivery-address-client" value="delivery-address-new"/>
+                                <label class="radio-custom-card-label" for="delivery-address-new"></label>
+                                <label class="header-input" for="delivery-address-new">Inserisci i dati di spedizione</label>
+                            </div>
+                            <div id="inputs-delivery-information">
+                                <div class="wrap-inputs col-md-6">
+                                    <label class="label-small" for="delivery-name-client">Nome:</label>
+                                    <input type="text" name="delivery-name-client" id="delivery-name-client"/>
+
+                                    <label class="label-small" for="delivery-address-client">Indirizzo:</label>
+                                    <input type="text" name="delivery-address-client" id="delivery-address-client"/>
+
+                                    <label class="label-small" for="delivery-city-client">Città:</label>
+                                    <input type="text" name="delivery-city-client" id="delivery-city-client"/>
+
+                                    <label class="label-small" for="delivery-state-client">Stato:</label>
+                                    <input type="text" name="delivery-state-client" id="delivery-state-client"/>
+
+                                    <label class="label-small" for="delivery-phone-client">Telefono:</label>
+                                    <input type="text" name="delivery-phone-client" id="delivery-phone-client"/>
+                                </div>
+
+                                <div class="wrap-inputs col-md-6">
+                                    <label class="label-small" for="delivery-surname-client">Cognome:</label>
+                                    <input type="text" name="delivery-surname-client" id="delivery-surname-client"/>
+
+                                    <label class="label-small" for="delivery-post-code-client">Cap:</label>
+                                    <input type="text" name="delivery-post-code-client" id="delivery-post-code-client"/>
+
+                                    <label class="label-small" for="delivery-province-client">Provincia:</label>
+                                    <input type="text" name="delivery-province-client" id="delivery-province-client"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h2 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="disabled" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <span>5</span>Metodo di pagamento
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                        <div class="panel-body">
+                            <div class="wrap-custom-input">
+                                <input class="radio-custom-card" type="radio" name="payment-method" value="cash" id="cash"/>
+                                <label class="radio-custom-card-label" for="cash"></label>
+                                <label for="cash">
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>Pagamento alla consegna <b>(gratis)</b>
+                                    <span class="db">non paghi niente ora - pagherai soltanto al momento della consegna del pacco da te ordinato.</span>
+                                </label>
+                            </div>
+                            <div class="wrap-custom-input">
+                                <input class="radio-custom-card" type="radio" name="payment-method" value="card" id="card"/>
+                                <label class="radio-custom-card-label" for="card"></label>
+                                <label for="card"><i class="fa fa-credit-card" aria-hidden="true"></i>
+                                    Carta di credito <b>(gratis)</b>
+                                    <img src="img/payment-visa2.png" alt="visa"/>
+                                    <img src="img/payment-mc2.png" alt="mc"/>
+                                    <img src="img/payment-amex2.png" alt="am"/>
+                                    <span class="db">Per pagare con carta di credito verrai rediretto al sito di loviit <a href="#">(Anteprima sito)</a></span>
+                                </label>
+                            </div>
+                            <div class="wrap-custom-input">
+                                <input class="radio-custom-card" type="radio" name="payment-method" value="paypal" id="paypal"/>
+                                <label class="radio-custom-card-label" for="paypal"></label>
+                                <label for="paypal"><i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                                    PayPal <b>(gratis)</b>
+                                    <img src="img/payment-paypal2.png" alt="paypal"/>
+                                    <span class="db">Per pagare con PayPal verrai rediretto al sito di PayPal <a href="#">(Anteprima sito)</a></span>
+                                </label>
+                            </div>
+
+                            <div class="wrap-custom-input">
+                                <input class="radio-custom-card" type="radio" name="payment-method" value="bank-transfer" id="bank-transfer"/>
+                                <label class="radio-custom-card-label" for="bank-transfer"></label>
+                                <label for="bank-transfer">
+                                    <i class="fa fa-university" aria-hidden="true"></i>Bonifico bancario anticipato</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                        <h2 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="disabled" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <span>6</span>Metodo di spedizione
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                        <div class="panel-body">
+
+                            <div class="wrap-custom-input">
+                                <input class="radio-custom-card" type="radio" name="shipping-method" value="standart-shipping" id="standart-shipping"/>
+                                <label class="radio-custom-card-label" for="standart-shipping"></label>
+                                <label for="standart-shipping">
+                                    Corriere Standard  (9.90 €) - <span>Ricevi l'ordine entro 72 ore da oggi</span>
+                                </label>
+                            </div>
+                            <div class="wrap-custom-input">
+                                <input class="radio-custom-card" checked type="radio" name="shipping-method" value="express-shipping" id="express-shipping"/>
+                                <label class="radio-custom-card-label" for="express-shipping"></label>
+                                <label for="express-shipping">
+                                    Spedizione Urgente  (14.90 €) - <span>Ricevi l'ordine Domani. Valido per ordini effettuati entro le 13:00, lun-ven.</span>
+                                </label>
+                            </div>
+                            <input class="big-yellow-btn pull-right" type="submit" value="Procedi"/>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </form>
+    </div>
+    <div class="product-basket-small col-md-3">
+        <h2>Carrello</h2>
+        <ul class="list-products">
+            <li class="clearfix">
+                <span><a href="#">iPhone 6 Plus 128 GB Grigio siderale (Ricondizionato)</a></span>
+                <a href="#" class="delete-pruduct fa fa-times" aria-hidden="true"></a>
+            </li>
+            <li class="clearfix">
+                <span><a href="#">iPad 2 32 GB Wi-Fi + Cell Bianco (Ricondizionato)</a></span>
+                <a href="#" class="delete-pruduct fa fa-times" aria-hidden="true"></a>
+            </li>
+        </ul>
+        <div class="sum-total-price">
+            <p class="info">prezzo finale (IVA inclusa):</p>
+            <p class="price">859,80 €</p>
+        </div>
+    </div>
+</div>
+
+
+
+<section class="advantages">
+    <div class="container">
+        <ul>
+            <li class="col-sm-3">
+                <img src="img/money-back-ico.png" alt="money-back"/>
+                <p>soddisfatti o rimborsati</p>
+            </li>
+            <li class="col-sm-3">
+                <img src="img/satisfied-customers-ico.png" alt="satisfied-customers"/>
+                <p>99% clienti soddisfatti</p>
+            </li>
+            <li class="col-sm-3">
+                <img src="img/warranty-ico.png" alt="warranty"/>
+                <p>garanzia 2 anni</p>
+            </li>
+            <li class="col-sm-3">
+                <img src="img/free14-ico.png" alt="free14"/>
+                <p>reso gratis 14 giorni</p>
+            </li>
+        </ul>
+    </div>
+</section>
+<footer>
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-md-2 footer-block">
+                <ul>
+                    <li><a href="#">Chi siamo</a></li>
+                    <li><a href="#">Info e Contatti</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 footer-block">
+                <ul>
+                    <li><a href="#">Condizioni di Privacy</a></li>
+                    <li><a href="#">Spedizioni e Resi</a></li>
+                    <li><a href="#">Eco- friendly</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 footer-block">
+                <ul>
+                    <li><a href="#">Vendi</a></li>
+                    <li><a href="#">I Vantaggi TrenDevice</a></li>
+                    <li><a href="#">Aziende</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 social footer-block">
+                <p>Seguici su:</p>
+                <ul>
+                    <li>
+                        <a class="social-link" href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a class="social-link" href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a class="social-link" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a class="social-link" href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rewards col-md-4 footer-block">
+                <div class="left-block col-md-4 col-md-offset-2">
+                    <img src="img/sigilloSI.PNG" alt="siglito"/>
+                </div>
+                <div class="right-block col-md-6">
+
+                    <!--widget code taken from the site http://www.trendevice.com/-->
+                    <div class="widget_merchant">
+                        <div class="fdt_widget">
+                            <a href="http://widget.zoorate.com/go.php?function=feed_redirect&amp;type=merchant&amp;widget_id=37fb954ca51520a8&amp;rwu=aHR0cDovL3d3dy5mZWVkYXR5LmNvbS9mZWVkYXR5L3Jldmlld3MvdHJlbmRldmljZQ==" target="_blank">
+                                <div class="fdt_widget_wrapper">
+
+                                    <div class="fdt_estimation">
+                                        <img src="//widget.zoorate.com/images/widget_v3/bkgd_Silver.jpg" alt="" class="bkgd_est">
+                                        <div class="txt_est">OTTIMO</div></div>
+
+                                    <div class="fdt_ratx_star">
+                                        <img src="//widget.zoorate.com/rating/rate-small-4.5.png" alt="voto">
+
+                                    </div>
+
+                                    <div class="fdt_ratx_num">
+                                        <div class="fdt_ratx">4.5<span class="fdt_sum">/5</span></div>
+                                    </div>
+
+                                    <div class="fdt_txt_opinions">recensioni</div>
+
+                                    <div class="fdt_num_opinions">
+                                        <div class="fdt_all">701</div>
+                                    </div>
+
+                                    <div class="fdt_logo"></div>
+
+                                    <div class="fdt_reviews">
+                                        <div class="fdt_title_reviews">Leggi le recensioni
+                                            <!--<img src="//c.zoorate.com/cs.php?action=w_merchant&value=10213689" alt="" title="" style="display: none;" width=1 height=1 />-->
+                                        </div>
+                                        <hr>
+                                        <div class="fdt_rew">
+                                            Veloci e professionali
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--END widget code -->
+                    <img src="img/associato-confindustria.png" alt="associato-confindustria"/>
+                </div>
+            </div>
+        </div>
+        <div class="payment-copywrigth row">
+            <div class="payment col-md-6">
+                <span>ACQUISTI SICURI ONLINE CON</span>
+                <ul>
+                    <li><a href="#"><img src="img/payment-visa.jpg" alt="visa"/></a></li>
+                    <li><a href="#"><img src="img/payment-amex.jpg" alt="amex"/></a></li>
+                    <li><a href="#"><img src="img/payment-mc.jpg" alt="mc"/></a></li>
+                    <li><a href="#"><img src="img/payment-maestro.jpg" alt="maestro"/></a></li>
+                    <li><a href="#"><img src="img/payment-visaE.jpg" alt="visa-electron"/></a></li>
+                    <li><a href="#"><img src="img/payment-paypal.jpg" alt="paypal"/></a></li>
+                    <li><a href="#"><img src="img/payment-postpay.jpg" alt="postpay"/></a></li>
+                </ul>
+            </div>
+            <div class="privacy-policy col-md-6 clearfix">
+                <p>Panta Rei S.r.l. - P.I. 02162920645 - Cap. Soc. 100.000 € i.v. - Privacy Policy</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/jquery.bxslider.min.js"></script>
+
+<!--Custom JS-->
+<script src="js/main.js"></script>
+
+</body>
+</html>
