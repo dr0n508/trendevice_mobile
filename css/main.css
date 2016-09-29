@@ -782,30 +782,30 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .breadcrumbs {
   text-align: center; }
   .breadcrumbs p {
-    font-size: 27px;
+    font-size: 18px;
     margin-bottom: 10px; }
     .breadcrumbs p .active {
       color: #F79A1F; }
     .breadcrumbs p .stage span {
-      font-size: 36px; }
+      font-size: 34px; }
 
 .product-basket {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300; }
   .product-basket h2 {
     color: #FFFFFF;
     background: #484848;
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 10px;
-    padding: 10px 15px; }
+    padding: 5px 15px; }
   .product-basket form {
     background: #EEEEEE;
-    padding: 20px 30px; }
+    padding: 10px 10px; }
   .product-basket .list-product li {
     margin-bottom: 20px;
     display: flex; }
     .product-basket .list-product li .name-product {
-      width: 90%;
+      width: 75%;
       float: left;
       margin: auto; }
       .product-basket .list-product li .name-product a {
@@ -814,7 +814,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
           text-decoration: none; }
     .product-basket .list-product li .price {
       font-weight: 400;
-      width: 10%;
+      width: 25%;
       float: left;
       text-align: right;
       margin: auto; }
@@ -823,10 +823,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     font-weight: 400; }
   .product-basket .text-delivery, .product-basket .text-total-price {
     font-weight: 300;
-    width: 90%;
+    width: 75%;
     float: left; }
   .product-basket .price-delivery, .product-basket .sum-total-price {
-    width: 10%;
+    width: 25%;
     float: left;
     text-align: right; }
   .product-basket .promoCode {
@@ -855,7 +855,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       width: 95%;
       height: auto; }
   .review .text-review {
-    padding: 40px 10px 10px 10px; }
+    padding: 10px 30px; }
 
 /******************************information-client************************************/
 /************************************************************************************/
