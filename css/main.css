@@ -900,8 +900,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     border: none;
     font-size: 16px;
     margin: 4px 0;
-    padding-left: 5px;
-    padding-right: 5px; }
+    padding: 5px; }
   .information-client address {
     margin-bottom: 10px; }
   .information-client .big-yellow-btn {
@@ -970,8 +969,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     margin-right: 10px;
     width: 20px; }
   .wrap-custom-input b {
-    font-size: 13px;
-    margin-right: 20px; }
+    font-size: 13px; }
 
 .product-basket-small {
   margin-top: 5px; }
@@ -1048,7 +1046,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   background-color: #EEEEEE;
   margin-top: 5px;
-  padding: 30px 30px 30px 50px;
+  padding: 10px 40px 10px 40px;
   border: none; }
 
 .panel-group .panel {
@@ -1056,17 +1054,18 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   border-radius: 0;
   margin-top: 5px; }
   .panel-group .panel .facebook-block {
+    text-align: center;
+    border-top: solid 1px #8e9092;
+    padding-top: 30px;
+    margin-top: 30px;
     position: relative; }
-    .panel-group .panel .facebook-block .wrap-inputs:first-child {
-      border-right: solid 1px #8e9092;
-      z-index: 1; }
     .panel-group .panel .facebook-block:before {
       content: "oppure";
       position: absolute;
       display: inline-block;
       text-align: center;
       padding: 10px 5px;
-      top: 50%;
+      top: 0%;
       left: 50%;
       margin-top: -23px;
       margin-left: -25px;
@@ -1076,7 +1075,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .facebook-btn {
   color: #FFFFFF;
   display: inline-block;
-  float: right;
   border-top: solid 2px #7189bd;
   background: #4b6aab;
   /* Old browsers */

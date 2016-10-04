@@ -47,6 +47,22 @@ $(document).ready(function () {
     /****************************valid and open block card02.html**********************/
     /*****block02*****/
 
+    $('#next-new-user').click(function(){
+        $('#headingTwo').addClass('open');
+        $("#collapseTwo").collapse('show');
+    });
+
+    $('#next-fb-user').click(function(){
+        $('#headingTwo').addClass('open');
+        $("#collapseTwo").collapse('show');
+    });
+
+    $('#next-login-user').click(function(){
+        $('#headingTwo').addClass('open');
+        $("#collapseTwo").collapse('show');
+    });
+
+
     $('input[name="address-client"]').change(function() {
         if ( $('#address-available').prop("checked") ) {
             $('a[aria-controls="collapseThree"]').attr('data-toggle', 'collapse');

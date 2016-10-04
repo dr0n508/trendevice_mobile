@@ -1292,8 +1292,7 @@ $white-color: #FFFFFF;
     border: none;
     font-size: 16px;
     margin: 4px 0;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 5px;
   }
   address {
     margin-bottom: 10px;
@@ -1384,7 +1383,7 @@ $white-color: #FFFFFF;
   }
   b {
     font-size: 13px;
-    margin-right: 20px;
+//    margin-right: 20px;
   }
 }
 
@@ -1483,7 +1482,7 @@ $white-color: #FFFFFF;
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
   background-color: $light-gray-color;
   margin-top: 5px;
-  padding: 30px 30px 30px 50px;
+  padding: 10px 40px 10px 40px;
   border: none;
 }
 .panel-group .panel {
@@ -1491,18 +1490,18 @@ $white-color: #FFFFFF;
   border-radius: 0;
   margin-top: 5px;
   .facebook-block {
+    text-align: center;
+    border-top: solid 1px #8e9092;
+    padding-top: 30px;
+    margin-top: 30px;
     position: relative;
-    .wrap-inputs:first-child {
-      border-right: solid 1px #8e9092;
-      z-index: 1;
-    }
     &:before {
       content: "oppure";
       position: absolute;
       display: inline-block;
       text-align: center;
       padding: 10px 5px;
-      top: 50%;
+      top: 0%;
       left: 50%;
       margin-top: -23px;
       margin-left: -25px;
@@ -1515,7 +1514,7 @@ $white-color: #FFFFFF;
 .facebook-btn {
   color: $white-color;
   display: inline-block;
-  float: right;
+//  float: right;
   border-top: solid 2px #7189bd;
   background: #4b6aab; /* Old browsers */
   background: -moz-linear-gradient(top,  #4b6aab 0%, #325195 100%); /* FF3.6-15 */
