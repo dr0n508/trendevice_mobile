@@ -91,6 +91,9 @@ $white-color: #FFFFFF;
     color: $white-color;
     text-decoration: none !important;
   }
+  @media only screen and (max-width: 460px) {
+    width: 100%;
+  }
 }
 
 .big-yellow-btn.disable{
@@ -1287,7 +1290,12 @@ $white-color: #FFFFFF;
 .information-client {
   font-size: 18px;
   font-weight: 300;
-  label {font-weight: 300}
+  label {
+    font-weight: 300;
+    @media only screen and (max-width: 460px) {
+      font-size: 16px;
+    }
+  }
   input {
     border: none;
     font-size: 16px;
@@ -1326,6 +1334,9 @@ $white-color: #FFFFFF;
     a {
       text-decoration: underline !important;
       color: inherit;
+    }
+    @media only screen and (max-width: 460px) {
+      font-size: 16px;
     }
   }
   .authentication {
@@ -1471,6 +1482,7 @@ $white-color: #FFFFFF;
   }
 }
 
+
 .panel-default>.panel-heading.open {
   background-color: $dark-gray-color;
   border-radius: 0;
@@ -1479,6 +1491,15 @@ $white-color: #FFFFFF;
     display: block;
   }
 }
+
+.panel-default>.panel-heading a {
+  @media only screen and (max-width: 460px) {
+    font-size: 19px;
+    padding: 5px 0;
+  }
+}
+
+
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
   background-color: $light-gray-color;
   margin-top: 5px;
@@ -1531,6 +1552,15 @@ $white-color: #FFFFFF;
   }
   span {
     padding: 0 20px;
+  }
+  @media only screen and (max-width: 460px) {
+    i {
+      padding: 15px 10px;
+    }
+    span {
+      padding: 0 5px;
+      font-size: 15px;
+    }
   }
 
 }

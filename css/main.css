@@ -70,6 +70,9 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .big-yellow-btn:hover, .big-yellow-btn:visited {
     color: #FFFFFF;
     text-decoration: none !important; }
+  @media only screen and (max-width: 460px) {
+    .big-yellow-btn {
+      width: 100%; } }
 
 .big-yellow-btn.disable {
   background-color: #484848;
@@ -896,6 +899,9 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   font-weight: 300; }
   .information-client label {
     font-weight: 300; }
+    @media only screen and (max-width: 460px) {
+      .information-client label {
+        font-size: 16px; } }
   .information-client input {
     border: none;
     font-size: 16px;
@@ -928,6 +934,9 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     .information-client .header-input a {
       text-decoration: underline !important;
       color: inherit; }
+    @media only screen and (max-width: 460px) {
+      .information-client .header-input {
+        font-size: 16px; } }
   .information-client .authentication label {
     display: block; }
   .information-client .authentication .lost-pass {
@@ -1043,6 +1052,11 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     text-decoration: none;
     display: block; }
 
+@media only screen and (max-width: 460px) {
+  .panel-default > .panel-heading a {
+    font-size: 19px;
+    padding: 5px 0; } }
+
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   background-color: #EEEEEE;
   margin-top: 5px;
@@ -1094,6 +1108,12 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     border-right: solid 1px #365092; }
   .facebook-btn span {
     padding: 0 20px; }
+  @media only screen and (max-width: 460px) {
+    .facebook-btn i {
+      padding: 15px 10px; }
+    .facebook-btn span {
+      padding: 0 5px;
+      font-size: 15px; } }
 
 /****************************************control-card********************************/
 /************************************************************************************/
