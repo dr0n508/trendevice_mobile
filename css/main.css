@@ -49,7 +49,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   font-weight: 300;
   padding: 5px 25px;
   color: #FFFFFF;
-  background: #484848;
+  background: #2D2D2D;
   border: none;
   outline: none; }
   .small-gray-btn:hover {
@@ -75,7 +75,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       width: 100%; } }
 
 .big-yellow-btn.disable {
-  background-color: #484848;
+  background-color: #2D2D2D;
   pointer-events: none; }
 
 .db {
@@ -88,13 +88,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   font-weight: 300; }
 
 .navbar-default {
-  background: #484848; }
+  background: #2D2D2D; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-  background: #232323; }
-
-.navbar-default .navbar-nav li .menu-home-products:hover {
-  background: #232323; }
+  background: #191919; }
 
 .navbar-default .navbar-nav > li > a {
   color: #FFFFFF !important; }
@@ -107,8 +104,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 
 .basket-fa i, .basket-fa-xs i, .fa-user {
   color: #FFFFFF; }
-  .basket-fa i:hover, .basket-fa-xs i:hover, .fa-user:hover {
-    color: #5daed7; }
 
 .basket-fa-xs, .user-fa-xs {
   float: right;
@@ -119,8 +114,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   text-transform: uppercase;
   background: #2889c2; }
   .sell-btn:hover {
-    text-decoration: none;
-    background-color: #5daed7; }
+    text-decoration: none; }
 
 /*****button-sandwich*******/
 .navbar-header .navbar-toggle {
@@ -262,8 +256,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       font-size: 20px;
       width: 120px; } }
 
-/******************************about-us**********************************************/
-/************************************************************************************/
 /***********************************advantages***************************************/
 /************************************************************************************/
 .reward {
@@ -316,7 +308,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .header-list-mac {
   font-size: 24px;
   color: #EEEEEE;
-  background: #484848;
+  background: #2D2D2D;
   padding: 0 20px;
   margin: 0 5px;
   display: block; }
@@ -326,7 +318,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   text-align: center; }
   .list-models-products li a {
     font-size: 24px;
-    color: #484848;
+    color: #2D2D2D;
     background: #EEEEEE;
     padding: 20px 0;
     display: block; }
@@ -366,56 +358,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     background: url("../img/advantage04.png") 50% 2% no-repeat;
     background-size: 50px; }
 
-.offer .container {
-  padding: 0; }
-.offer .slide {
-  background: #EEEEEE;
-  height: 220px; }
-  .offer .slide .img-wrapper {
-    width: 50%;
-    height: 220px;
-    position: relative; }
-    .offer .slide .img-wrapper img {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 85%;
-      height: auto;
-      margin: auto; }
-  .offer .slide .offer-wrapper {
-    width: 50%;
-    padding: 70px 20px 20px 0; }
-    .offer .slide .offer-wrapper h3 {
-      font-size: 25px;
-      font-weight: 600;
-      margin-bottom: 5px; }
-    .offer .slide .offer-wrapper .small-yellow-btn {
-      width: 100%;
-      display: inline-block;
-      font-size: 20px;
-      text-align: center; }
-.offer .quick-offer {
-  text-align: center;
-  position: relative; }
-  .offer .quick-offer .offer-wrapper {
-    width: 100%;
-    padding: 10px 10px 0; }
-    .offer .quick-offer .offer-wrapper h3 {
-      font-size: 25px; }
-  .offer .quick-offer .img-wrapper-quick-offer img {
-    width: auto;
-    max-height: 100px;
-    margin: 0 auto; }
-  .offer .quick-offer .small-yellow-btn {
-    position: absolute;
-    bottom: 15px;
-    width: 70%;
-    left: 50%;
-    margin-left: -35%;
-    font-size: 16px; }
-
 /**********************************iphone6*******************************************/
 /************************************************************************************/
 .version-product h1 {
@@ -430,11 +372,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   pointer-events: none; }
 .version-product .model .wrap-img-model {
   position: relative;
-  display: block;
-  height: 200px; }
+  display: block; }
   .version-product .model .wrap-img-model img {
-    width: auto;
-    height: 100%; }
+    width: 100%;
+    height: auto; }
   .version-product .model .wrap-img-model span {
     position: absolute;
     top: -38px;
@@ -456,10 +397,24 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   display: inline-block; }
 @media only screen and (max-width: 460px) {
   .version-product .model {
+    width: 100%;
     padding-left: 5px;
-    padding-right: 5px; }
+    padding-right: 5px;
+    padding-bottom: 30px; }
     .version-product .model .wrap-img-model {
       height: 120px; }
+      .version-product .model .wrap-img-model img {
+        width: auto;
+        height: 100%; }
+      .version-product .model .wrap-img-model span {
+        top: -20px;
+        right: 50%;
+        margin-right: -50px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 16px; }
     .version-product .model .small-yellow-btn {
       padding: 5px; } }
 
@@ -527,7 +482,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   /****tabs*****/ }
   .product-section h1 {
     font-size: 46px;
-    color: #484848;
+    color: #2D2D2D;
     font-weight: 600;
     margin-bottom: 30px; }
   .product-section .wrap-selection[disabled] .label-condition {
@@ -542,7 +497,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     margin: 10px 0; }
     .product-section .label-condition .information-condition {
       color: #FFFFFF;
-      background: #484848;
+      background: #2D2D2D;
       width: 20px;
       height: 20px;
       display: inline-block;
@@ -667,6 +622,16 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     border: solid 1px #EEEEEE;
     width: 32.3%;
     text-align: center; }
+  .product-section .radio-custom-btn-label {
+    font-size: 19px;
+    background: #EEEEEE;
+    font-weight: 400;
+    padding: 5px 0;
+    border: solid 1px #EEEEEE;
+    width: 32.3%;
+    text-align: center; }
+  .product-section .radio-custom-btn-label.wf {
+    width: 49%; }
   .product-section .wrap-input-condition {
     margin-bottom: 30px; }
   .product-section .list-description-product li {
@@ -788,8 +753,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     display: inline-block; }
 
 /*****************/
-/*****************************************mac*product*page***************************/
-/************************************************************************************/
 /*****************************************breadcrumbs**cart01************************/
 /************************************************************************************/
 .breadcrumbs {
@@ -812,7 +775,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   font-weight: 300; }
   .product-basket h2 {
     color: #FFFFFF;
-    background: #484848;
+    background: #2D2D2D;
     font-size: 28px;
     margin-bottom: 10px;
     padding: 5px 15px; }
@@ -827,7 +790,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       float: left;
       margin: auto; }
       .product-basket .list-product li .name-product a {
-        color: #484848; }
+        color: #2D2D2D; }
         .product-basket .list-product li .name-product a:hover {
           text-decoration: none; }
     .product-basket .list-product li .price {
@@ -858,7 +821,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       padding: 5px; }
     .product-basket .promoCode a {
       color: #FFFFFF;
-      background: #484848;
+      background: #2D2D2D;
       padding: 7px 20px; }
       .product-basket .promoCode a:hover {
         text-decoration: none; }
@@ -922,7 +885,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       top: 3px;
       left: 3px;
       font-size: 15px;
-      color: #484848;
+      color: #2D2D2D;
       background: #EEEEEE;
       padding: 2px 5px;
       text-align: center; }
@@ -941,7 +904,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     display: block; }
   .information-client .authentication .lost-pass {
     font-size: 14px;
-    color: #484848;
+    color: #2D2D2D;
     text-decoration: underline !important; }
   .information-client .authentication .small-gray-btn {
     font-size: 18px;
@@ -964,7 +927,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  border: solid 2px #484848;
+  border: solid 2px #2D2D2D;
   position: absolute;
   left: -30px; }
 
@@ -986,7 +949,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     font-size: 24px;
     padding: 10px 15px;
     color: #FFFFFF;
-    background-color: #484848; }
+    background-color: #2D2D2D; }
   .product-basket-small .sum-total-price {
     background: #F79A1F;
     color: #FFFFFF;
@@ -997,12 +960,12 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       font-size: 26px; }
   .product-basket-small .list-products {
     padding: 15px;
-    border-left: solid 1px #484848;
-    border-right: solid 1px #484848; }
+    border-left: solid 1px #2D2D2D;
+    border-right: solid 1px #2D2D2D; }
     .product-basket-small .list-products li {
       font-size: 16px; }
       .product-basket-small .list-products li a {
-        color: #484848; }
+        color: #2D2D2D; }
         .product-basket-small .list-products li a:hover {
           text-decoration: none; }
       .product-basket-small .list-products li span {
@@ -1034,7 +997,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .checkbox-custom-label {
   width: 18px;
   height: 18px;
-  border: solid 2px #484848; }
+  border: solid 2px #2D2D2D; }
 
 /***********************************/
 /*****accordion-custom-styles****/
@@ -1046,7 +1009,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     display: block; }
 
 .panel-default > .panel-heading.open {
-  background-color: #484848;
+  background-color: #2D2D2D;
   border-radius: 0; }
   .panel-default > .panel-heading.open a {
     text-decoration: none;
@@ -1132,7 +1095,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     padding-bottom: 15px; }
   .control-card h2 {
     color: #FFFFFF;
-    background: #484848;
+    background: #2D2D2D;
     font-size: 28px;
     margin-bottom: 10px;
     padding: 5px 15px; }
@@ -1144,7 +1107,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     float: left;
     margin: auto; }
     .control-card .name-product a, .control-card .text-delivery a, .control-card .text-total-price a {
-      color: #484848; }
+      color: #2D2D2D; }
       .control-card .name-product a:hover, .control-card .text-delivery a:hover, .control-card .text-total-price a:hover {
         text-decoration: none; }
   .control-card .price, .control-card .price-delivery, .control-card .sum-total-price {
@@ -1193,7 +1156,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 /************************************************************************************/
 .button-up {
   padding: 10px 0;
-  background-color: #222222;
+  background: #191919;
   color: #FFFFFF;
   font-weight: 300;
   cursor: pointer;
@@ -1201,7 +1164,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 
 footer {
   font-size: 24px;
-  background: #484848;
+  background: #2D2D2D;
   padding: 25px 0;
   color: #EEEEEE; }
   footer .footer-block {
