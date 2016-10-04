@@ -93,6 +93,11 @@ $white-color: #FFFFFF;
   }
 }
 
+.big-yellow-btn.disable{
+  background-color: $dark-gray-color;
+  pointer-events: none;
+}
+
 .db {
   display: block;
 }
@@ -645,24 +650,25 @@ $white-color: #FFFFFF;
 
 .thanks-message {
   .wrap {
-    margin: 30px 70px;
+    margin: 30px 0;
     border: solid 3px $blue-color;
     text-align: center;
+    padding: 0 10px;
   }
   h1 {
-    font-size: 82px;
+    font-size: 65px;
     font-weight: 600;
   }
   .fa-check {
     color: #2db563;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
   }
   .compliment, .gift {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
   }
   .gift  {
@@ -685,9 +691,6 @@ $white-color: #FFFFFF;
       text-align: center;
       a {
         display: block;
-        &:hover i {
-          color: $light-gray-color;
-        }
       }
       i {
         line-height: 50px;
@@ -707,6 +710,13 @@ $white-color: #FFFFFF;
     .youtube {
       background: #ee3537;
     }
+  }
+  @media only screen and (max-width: 460px) {
+    h1 { font-size: 45px}
+    p {
+      font-size: 15px;
+    }
+    .social-link-thanks li {margin: 0}
   }
 }
 
@@ -1154,6 +1164,13 @@ $white-color: #FFFFFF;
     .stage span {font-size: 34px}
 
   }
+  @media only screen and (max-width: 460px) {
+    p {
+      font-size: 12px;
+      .stage span {font-size: 20px}
+    }
+
+  }
 }
 
 .product-basket {
@@ -1224,6 +1241,18 @@ $white-color: #FFFFFF;
       }
     }
   }
+  @media only screen and (max-width: 460px) {
+    h2 { font-size: 24px}
+    ul {
+      font-size: 15px;
+    }
+    .delivery-price, .total-price {
+      font-size: 15px;
+    }
+    .promoCode {
+      font-size: 15px;
+    }
+  }
 }
 .review {
   padding-top: 50px;
@@ -1238,6 +1267,12 @@ $white-color: #FFFFFF;
   }
   .text-review {
     padding: 10px 30px;
+  }
+  @media only screen and (max-width: 460px) {
+    .text-review {
+      font-size: 14px;
+      padding: 10px;
+    }
   }
 }
 
@@ -1397,6 +1432,33 @@ $white-color: #FFFFFF;
   }
 }
 
+/***********custom checkbox**********/
+.checkbox-custom:not(checked){
+  position: absolute;
+  opacity: 0;
+}
+.checkbox-custom:not(checked) + label {
+  //    color: #808080;
+}
+.checkbox-custom:checked + label {
+  position: relative;
+  &:before {
+    color: $blue-color;
+    content: "\2714";
+    font-size: 36px;
+    position: absolute;
+    bottom: -12px;
+    right: -12px;
+  }
+}
+.checkbox-custom-label {
+  width: 18px;
+  height: 18px;
+  border: solid 2px $dark-gray-color;
+}
+
+/***********************************/
+
 
 
 /*****accordion-custom-styles****/
@@ -1480,21 +1542,28 @@ $white-color: #FFFFFF;
 
 .control-card {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   .wrap-table address {
     margin-bottom: 10px;
   }
   .wrap {
-    padding: 20px;
+    padding: 10px;
     background: $light-gray-color;
+    margin-bottom: 15px;
   }
+  .wrap-table {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 15px;
+  }
+
 
   h2 {
     color: $white-color;
     background: $dark-gray-color;
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 10px;
-    padding: 10px 15px;
+    padding: 5px 15px;
 
   }
   .header-block {
@@ -1532,12 +1601,18 @@ $white-color: #FFFFFF;
   .wrap-custom-input {
     font-size: 14px;
     text-align: right;
-    margin: 40px 0 10px;
+    margin: 10px 0 10px;
     font-weight: 300;
     label { font-weight: 300}
     .radio-custom-card-label {
       position: static;
     }
+  }
+  @media only screen and (max-width: 460px) {
+    .wrap {
+    font-size: 15px
+    }
+    .wrap-custom-input label {font-size: 13px}
   }
 }
 
@@ -1549,16 +1624,17 @@ $white-color: #FFFFFF;
     background: url("../img/logo-add-discount.png") no-repeat 2% 50%, #2488c4;
     margin-bottom: 10px;
     text-align: center;
-    padding: 15px;
+    padding: 15px 15px 15px 100px;
+
     color: $white-color;
     h3 {
-      font-size: 32px;
+      font-size: 18px;
       text-transform: uppercase;
       margin-bottom: 10px;
     }
     p {
       font-weight: 300;
-      font-size: 25px;
+      font-size: 16px;
     }
   }
 }

@@ -71,6 +71,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     color: #FFFFFF;
     text-decoration: none !important; }
 
+.big-yellow-btn.disable {
+  background-color: #484848;
+  pointer-events: none; }
+
 .db {
   display: block; }
 
@@ -459,20 +463,21 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 /***************************************thanks-message*******************************/
 /************************************************************************************/
 .thanks-message .wrap {
-  margin: 30px 70px;
+  margin: 30px 0;
   border: solid 3px #2889c2;
-  text-align: center; }
+  text-align: center;
+  padding: 0 10px; }
 .thanks-message h1 {
-  font-size: 82px;
+  font-size: 65px;
   font-weight: 600; }
 .thanks-message .fa-check {
   color: #2db563; }
 .thanks-message p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300; }
 .thanks-message .compliment, .thanks-message .gift {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400; }
 .thanks-message .gift {
   padding-top: 50px; }
@@ -491,8 +496,6 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     text-align: center; }
     .thanks-message .social-link-thanks li a {
       display: block; }
-      .thanks-message .social-link-thanks li a:hover i {
-        color: #EEEEEE; }
     .thanks-message .social-link-thanks li i {
       line-height: 50px;
       text-align: center;
@@ -505,6 +508,13 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     background: #096c9b; }
   .thanks-message .social-link-thanks .youtube {
     background: #ee3537; }
+@media only screen and (max-width: 460px) {
+  .thanks-message h1 {
+    font-size: 45px; }
+  .thanks-message p {
+    font-size: 15px; }
+  .thanks-message .social-link-thanks li {
+    margin: 0; } }
 
 /*********************************************product_page***************************/
 /************************************************************************************/
@@ -788,6 +798,11 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       color: #F79A1F; }
     .breadcrumbs p .stage span {
       font-size: 34px; }
+  @media only screen and (max-width: 460px) {
+    .breadcrumbs p {
+      font-size: 12px; }
+      .breadcrumbs p .stage span {
+        font-size: 20px; } }
 
 .product-basket {
   font-size: 18px;
@@ -844,6 +859,15 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       padding: 7px 20px; }
       .product-basket .promoCode a:hover {
         text-decoration: none; }
+  @media only screen and (max-width: 460px) {
+    .product-basket h2 {
+      font-size: 24px; }
+    .product-basket ul {
+      font-size: 15px; }
+    .product-basket .delivery-price, .product-basket .total-price {
+      font-size: 15px; }
+    .product-basket .promoCode {
+      font-size: 15px; } }
 
 .review {
   padding-top: 50px;
@@ -856,6 +880,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       height: auto; }
   .review .text-review {
     padding: 10px 30px; }
+  @media only screen and (max-width: 460px) {
+    .review .text-review {
+      font-size: 14px;
+      padding: 10px; } }
 
 /******************************information-client************************************/
 /************************************************************************************/
@@ -981,6 +1009,27 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
         width: 10%;
         text-align: right; }
 
+/***********custom checkbox**********/
+.checkbox-custom:not(checked) {
+  position: absolute;
+  opacity: 0; }
+
+.checkbox-custom:checked + label {
+  position: relative; }
+  .checkbox-custom:checked + label:before {
+    color: #2889c2;
+    content: "\2714";
+    font-size: 36px;
+    position: absolute;
+    bottom: -12px;
+    right: -12px; }
+
+.checkbox-custom-label {
+  width: 18px;
+  height: 18px;
+  border: solid 2px #484848; }
+
+/***********************************/
 /*****accordion-custom-styles****/
 .panel-default > .panel-heading {
   background-color: #dcdcdc;
@@ -1052,18 +1101,23 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 /************************************************************************************/
 .control-card {
   font-weight: 300;
-  font-size: 20px; }
+  font-size: 18px; }
   .control-card .wrap-table address {
     margin-bottom: 10px; }
   .control-card .wrap {
-    padding: 20px;
-    background: #EEEEEE; }
+    padding: 10px;
+    background: #EEEEEE;
+    margin-bottom: 15px; }
+  .control-card .wrap-table {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 15px; }
   .control-card h2 {
     color: #FFFFFF;
     background: #484848;
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 10px;
-    padding: 10px 15px; }
+    padding: 5px 15px; }
   .control-card .header-block {
     font-weight: 600;
     margin-bottom: 5px; }
@@ -1089,12 +1143,17 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .control-card .wrap-custom-input {
     font-size: 14px;
     text-align: right;
-    margin: 40px 0 10px;
+    margin: 10px 0 10px;
     font-weight: 300; }
     .control-card .wrap-custom-input label {
       font-weight: 300; }
     .control-card .wrap-custom-input .radio-custom-card-label {
       position: static; }
+  @media only screen and (max-width: 460px) {
+    .control-card .wrap {
+      font-size: 15px; }
+    .control-card .wrap-custom-input label {
+      font-size: 13px; } }
 
 /*******************************************add-discount*****************************/
 /************************************************************************************/
@@ -1102,15 +1161,15 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   background: url("../img/logo-add-discount.png") no-repeat 2% 50%, #2488c4;
   margin-bottom: 10px;
   text-align: center;
-  padding: 15px;
+  padding: 15px 15px 15px 100px;
   color: #FFFFFF; }
   .add-discount .wrap-add-discount h3 {
-    font-size: 32px;
+    font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 10px; }
   .add-discount .wrap-add-discount p {
     font-weight: 300;
-    font-size: 25px; }
+    font-size: 16px; }
 
 /******************************************footer************************************/
 /************************************************************************************/
