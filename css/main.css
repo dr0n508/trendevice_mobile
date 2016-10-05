@@ -569,10 +569,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     background-color: #2889c2;
     color: #FFFFFF; }
   .product-section .radio-custom-color-label {
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
-    margin-right: 5px; }
+    margin-right: 3px; }
   .product-section label[for="grigio-siderale"] {
     background: #606061; }
   .product-section label[for="argento"] {
