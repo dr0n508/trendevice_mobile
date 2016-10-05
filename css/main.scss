@@ -921,6 +921,7 @@ $white-color: #FFFFFF;
   }
 
   @media only screen and (max-width: 460px) {
+    h1 {font-size: 32px}
     label[for="number-product"] {
       font-size: 17px;
     }
