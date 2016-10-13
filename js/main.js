@@ -32,10 +32,8 @@ $(document).ready(function () {
 
         var newSrc = './img/products-img/' + productCategory + '/' + productModel + '/' + productModel + '_' + colorNameId + '.png';
         var newSrc_b = './img/products-img/' + productCategory + '/' + productModel + '/' + productModel + '_' + colorNameId + '_b.png';
-        $($('.product-section .tab-pane .wrap-img img')[0]).attr("src", newSrc);
-        $($('.product-section .tab-pane .wrap-img img')[1]).attr("src", newSrc_b);
-        $($('.nav-tabs a img')[0]).attr("src", newSrc);
-        $($('.nav-tabs a img')[1]).attr("src", newSrc_b);
+        $($('.slider-product-page li img')[0]).attr("src", newSrc);
+        $($('.slider-product-page li img')[1]).attr("src", newSrc_b);
     });
 
     /******menu-double-click********/
@@ -185,7 +183,14 @@ $(document).ready(function () {
     $('#buttonUp').click(function() {
         $('html, body').animate({scrollTop: 0},500);
         return false;
-    })
+    });
+
+
+    $('.slider-product-page').bxSlider({
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        pager: false
+    });
 
 
 
