@@ -161,33 +161,46 @@
 
         <p class="label-condition">1. Scegli il Colore:</p>
         <!-- Button trigger modal -->
-        <a href="#" class="popup-color-btn" data-toggle="modal" data-target="#myModal">
+        <a href="#" class="popup-color-btn" data-toggle="modal" data-target="#modalColors">
             <span class="selected-color">Not selected</span>
             <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </a>
 
         <form action="#">
         <!-- Modal -->
-        <div class="modal fade dropdown-inputs" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade dropdown-inputs" id="modalColors" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog dropdown-inputs" role="document">
                 <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-                    <div class="modal-body">
+                    <div class="modal-header header-popup-dropdown">
+                        <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span class="fa fa-times fa-lg" aria-hidden="true"></span></button>
+                    </div>
+                    <div class="modal-body clearfix">
                         <div class="wrap-selection" group-radio-inputs>
                             <div class="wrap-color-inputs">
-                                <input class="radio-custom-color-input" type="radio" id="grigio-siderale" name="color-product" value="Grigio Siderale"/>
-                                <label class="radio-custom-color-label" for="grigio-siderale"><span></span></label>
-                                <label>grigio-siderale</label>
-
-                                <input class="radio-custom-color-input" type="radio" id="argento" name="color-product" value="Argento"/>
-                                <label class="radio-custom-color-label" for="argento"><span></span></label>
-                                <label>argento</label>
-
-                                <input class="radio-custom-color-input" type="radio" id="oro" name="color-product" value="Oro"/>
-                                <label class="radio-custom-color-label" for="oro"><span></span></label>
-                                <label>oro</label>
-
+                                <div class="wrap-input">
+                                    <input class="radio-custom-color-input" input-color type="radio" id="grigio-siderale" name="color-product" value="Grigio Siderale"/>
+                                    <label class="radio-custom-color-label" for="grigio-siderale"></label>
+                                    <label for="grigio-siderale" class="label-dropdown-input">
+                                        <span class="text-label">Grigio-siderale</span>
+                                        <span class="color-label"></span>
+                                    </label>
+                                </div>
+                                <div class="wrap-input">
+                                    <input class="radio-custom-color-input" input-color type="radio" id="argento" name="color-product" value="Argento"/>
+                                    <label class="radio-custom-color-label" for="argento"></label>
+                                    <label for="argento" class="label-dropdown-input">
+                                        <span class="text-label">Argento</span>
+                                        <span class="color-label"></span>
+                                    </label>
+                                </div>
+                                <div class="wrap-input">
+                                    <input class="radio-custom-color-input" input-color type="radio" id="oro" name="color-product" value="Oro"/>
+                                    <label class="radio-custom-color-label" for="oro"></label>
+                                    <label for="oro" class="label-dropdown-input">
+                                        <span class="text-label">Oro</span>
+                                        <span class="color-label"></span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -200,12 +213,52 @@
 
         <div class="wrap-selection" group-radio-inputs>
             <p class="label-condition">2. Scegli le Condizioni:
-                <a class="link-information-condition" href="#" data-toggle="modal" data-target="#popover-condition">clicca qui per saperne di più</a></p>
-            <select class="select-condition" name="condition-phone">
-                <option value="good-condition">Buono</option>
-                <option value="excellent-condition">Ottimo</option>
-                <option value="perfect-condition">Perfetto</option>
-            </select>
+                <a class="link-information-condition" href="#" data-toggle="modal" data-target="#popover-condition">clicca qui per saperne di più</a>
+            </p>
+
+            <!-- Button trigger modal -->
+            <a href="#" class="popup-color-btn" data-toggle="modal" data-target="#modalCondition">
+                <span class="selected-condition">Not selected</span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade dropdown-inputs" id="modalCondition" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog dropdown-inputs" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header header-popup-dropdown">
+                            <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span class="fa fa-times fa-lg" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="modal-body clearfix">
+                            <div class="wrap-selection" group-radio-inputs>
+                                <div class="wrap-color-inputs">
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-color-input" input-condition type="radio" id="good-condition" name="condition-phone"  value="Buono"/>
+                                        <label class="radio-custom-color-label" for="good-condition"></label>
+                                        <label for="good-condition" class="label-dropdown-input">
+                                            <span class="text-label">Buono</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-color-input" input-condition type="radio" id="excellent-condition" name="condition-phone" value="Ottimo"/>
+                                        <label class="radio-custom-color-label" for="excellent-condition"></label>
+                                        <label for="excellent-condition" class="label-dropdown-input">
+                                            <span class="text-label">Ottimo</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-color-input" input-condition type="radio" id="perfect-condition" name="condition-phone" value="Perfetto"/>
+                                        <label class="radio-custom-color-label" for="perfect-condition"></label>
+                                        <label for="perfect-condition" class="label-dropdown-input">
+                                            <span class="text-label">Perfetto</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <p class="label-condition">3. Scegli la Quantità:</p>

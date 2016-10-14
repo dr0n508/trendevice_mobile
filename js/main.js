@@ -20,13 +20,13 @@ $(document).ready(function () {
 //        infiniteLoop: false
 //    });
 
-    $(".radio-custom-color-input").change(function() {
+    $("input[input-color]").change(function() {
         $('.selected-color').empty();
         var productCategory = $('.product-section').attr("id").split('-')[0];
         var productModel = $('.product-section').attr("id").split('-')[1];
-        var colorName = $('.radio-custom-color-input:checked').val();
+        var colorName = $('input[input-color]:checked').val();
 
-        var colorNameId = $('.radio-custom-color-input:checked').attr("id");
+        var colorNameId = $('input[input-color]:checked').attr("id");
 
         $('.selected-color').append(colorName);
 
@@ -35,6 +35,16 @@ $(document).ready(function () {
         $($('.slider-product-page li img')[0]).attr("src", newSrc);
         $($('.slider-product-page li img')[1]).attr("src", newSrc_b);
     });
+
+    $("input[input-condition]").change(function() {
+        $('.selected-condition').empty();
+        var conditionName = $('input[input-condition]:checked').val();
+        $('.selected-condition').append(conditionName);
+
+
+    });
+
+
 
     /******menu-double-click********/
 

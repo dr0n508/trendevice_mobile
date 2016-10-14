@@ -32,9 +32,17 @@ div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,
   display: inline-block;
   text-align: left;
   vertical-align: middle;
-  @media only screen and (min-width: 460px) {
-    margin: 60px;
-  }
+  width: auto;
+  min-width: 220px;
+//  @media only screen and (max-width: 560px) {
+//    width: 60%;
+//  }
+//  @media only screen and (max-width: 460px) {
+//    width: 80%;
+//  }
+//  @media only screen and (max-width: 360px) {
+//    width: 90%;
+//  }
 }
 
 /***********************************custom-theme-elements****************************/
@@ -694,7 +702,7 @@ $white-color: #FFFFFF;
       color: #dddcdc;
 
     }
-    .radio-custom-btn-label, .radio-custom-btn-input, .radio-custom-color-label, .radio-custom-color-input {
+    .radio-custom-btn-label, .radio-custom-color-label, .radio-custom-color-input {
       color: $white-color;
       background-color: #dddcdc;
       border: none;
@@ -704,18 +712,18 @@ $white-color: #FFFFFF;
   .label-condition {
     font-size: 19px;
     margin: 10px 0;
-    .information-condition {
-      color: $white-color;
-      background: $dark-gray-color;
-      width: 20px;
-      height: 20px;
-      display: inline-block;
-      border-radius: 50%;
-      text-align: center;
-      font-size: 16px;
-      margin-left: 6px;
-      margin-right: 6px;
-    }
+//    .information-condition {
+//      color: $white-color;
+//      background: $dark-gray-color;
+//      width: 20px;
+//      height: 20px;
+//      display: inline-block;
+//      border-radius: 50%;
+//      text-align: center;
+//      font-size: 16px;
+//      margin-left: 6px;
+//      margin-right: 6px;
+//    }
     .link-information-condition {
       font-size: 12px;
       text-decoration: underline !important;
@@ -726,10 +734,10 @@ $white-color: #FFFFFF;
 
   }
   .wrap-color-inputs {
-    display: inline-block;
+//    display: inline-block;
     vertical-align: middle;
   }
-  .selected-color {
+  .selected-color, .selected-condition {
     font-weight: 400;
     display: inline-block;
     vertical-align: middle;
@@ -737,50 +745,16 @@ $white-color: #FFFFFF;
   }
 
   .radio-custom-color-input[disabled]+label {
-    position: relative;
     span {
-      &:before {
-        content: "";
-        position: absolute;
-        width: 32px;
-        height: 1px;
-        background-color: #b3b4b4;
-        display: block;
-        top: 19px;
-        bottom: 0;
-        left: 3px;
-        right: 0;
-        -moz-transform: rotate(50deg); /* Firefox */
-        -ms-transform: rotate(50deg); /* IE */
-        -webkit-transform: rotate(50deg); /* Safari, Chrome, iOS */
-        -o-transform: rotate(50deg); /* Opera */
-        transform: rotate(50deg);
-      }
-      &:after {
-        content: "";
-        position: absolute;
-        width: 32px;
-        height: 1px;
-        background-color: #b3b4b4;
-        display: block;
-        top: 19px;
-        bottom: 0;
-        left: 3px;
-        right: 0;
-        -moz-transform: rotate(-50deg); /* Firefox */
-        -ms-transform: rotate(-50deg); /* IE */
-        -webkit-transform: rotate(-50deg); /* Safari, Chrome, iOS */
-        -o-transform: rotate(-50deg); /* Opera */
-        transform: rotate(-50deg);
-      }
+
     }
   }
 
-  .radio-custom-btn-input[disabled]+label {
-    color: #b2b3b4;
-  }
+//  .radio-custom-btn-input[disabled]+label {
+//    color: #b2b3b4;
+//  }
 
-  .radio-custom-color-input:not(checked), .radio-custom-btn-input:not(checked){
+  .radio-custom-color-input:not(checked) {
     position: absolute;
     opacity: 0;
   }
@@ -788,85 +762,130 @@ $white-color: #FFFFFF;
     color: #808080;
   }
   .radio-custom-color-input:checked + label, {
-    border: solid 2px $blue-color;
+//    border: solid 2px $blue-color;
+    background-color: $dark-gray-color;
   }
 
-  .radio-custom-btn-input:checked + label {
-    background-color: $blue-color;
-    color: $white-color;
+//  .radio-custom-btn-input:checked + label {
+//    background-color: $blue-color;
+//    color: $white-color;
+//  }
+
+
+
+  .wrap-input {
+    margin-bottom: 10px;
+    position: relative;
+    padding: 4px 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .radio-custom-color-label {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 6px;
+      margin: auto;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      margin-right: 3px;
+      border: solid 2px $dark-gray-color;
+
+    }
+    .label-dropdown-input {
+      font-weight: 400;
+      font-size: 19px;
+      display: flex;
+      width: 100%;
+      padding-left: 40px;
+      .text-label {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+      .color-label {
+        width: 60px;
+        height: 20px;
+        display: inline-block;
+        margin-right: 0;
+      }
+      span {
+        margin: auto;
+      }
+    }
   }
 
-  .radio-custom-color-label {
-    width: 34px;
-    height: 34px;
-    border-radius: 50%;
-    margin-right: 3px;
+
+  .header-popup-dropdown {
+    padding: 10px 10px 0 0;
+    border: none;
   }
+
 
   /*****colors******/
 
-  label[for="grigio-siderale"] {
+  label[for="grigio-siderale"] .color-label {
     background: #606061;
   }
-  label[for="argento"] {
+  label[for="argento"] .color-label {
     background: #dddfde;
   }
-  label[for="oro"] {
+  label[for="oro"] .color-label {
     background: #e3d0b9;
   }
-  label[for="ororosa"] {
+  label[for="ororosa"] .color-label {
     background: #eecdbd;
   }
 
-  label[for="sport-bianco"] {
+  label[for="sport-bianco"] .color-label {
     background: #f5f6f7;
   }
 
-  label[for="rosa"] {
+  label[for="rosa"] .color-label {
     background: #f26d6f;
   }
 
-  label[for="bianco"] {
+  label[for="bianco"] .color-label {
     background: $white-color;
     border: solid 1px #808080;
   }
-  label[for="nero"] {
+  label[for="nero"] .color-label {
     background: #000000;
   }
 
-  label[for="sport-nero"] {
+  label[for="sport-nero"] .color-label {
     background: url("../img/bg-clock04.png") no-repeat 50% 50%;
   }
 
-  label[for="classicnero"] {
+  label[for="classicnero"] .color-label {
     background: url("../img/bg-clock01.png") no-repeat 50% 50%;
   }
 
-  label[for="pellenera"] {
+  label[for="pellenera"] .color-label {
     background: url("../img/bg-clock02.png") no-repeat 50% 50%;
   }
 
-  label[for="modernblunotte"] {
+  label[for="modernblunotte"] .color-label {
     background: url("../img/bg-clock03.png") no-repeat 50% 50%;
   }
 
-  label[for="modernnero"] {
+  label[for="modernnero"] .color-label {
     background: url("../img/bg-clock04.png") no-repeat 50% 50%;
   }
 
-  label[for="albicocca"] {
+  label[for="albicocca"] .color-label {
     background: #f48b7c;
   }
 
-  label[for="verde"] {
+  label[for="verde"] .color-label {
     background: #c4d93d;
   }
 
-  label[for="azzurro"] {
+  label[for="azzurro"] .color-label {
     background: #77c4ed;
   }
 
-  label[for="giallo"] {
+  label[for="giallo"] .color-label {
     background: #fdf16f;
   }
 
