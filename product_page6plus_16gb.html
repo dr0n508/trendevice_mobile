@@ -159,71 +159,17 @@
         <p class="description-product-model">Disponibile in 4 colori, batteria in stato ottimale,
             garanzia 2 anni, cavo USB e alimentatore originale.</p>
 
-        <p class="label-condition">1. Scegli il Colore:</p>
-        <!-- Button trigger modal -->
-        <a href="#" class="popup-color-btn" data-toggle="modal" data-target="#modalColors">
-            <span class="selected-color">Not selected</span>
-            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-        </a>
 
         <form action="#">
-        <!-- Modal -->
-        <div class="modal fade dropdown-inputs" id="modalColors" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog dropdown-inputs" role="document">
-                <div class="modal-content">
-                    <div class="modal-header header-popup-dropdown">
-                        <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span class="fa fa-times fa-lg" aria-hidden="true"></span></button>
-                    </div>
-                    <div class="modal-body clearfix">
-                        <div class="wrap-selection" group-radio-inputs>
-                            <div class="wrap-color-inputs">
-                                <div class="wrap-input">
-                                    <input class="radio-custom-color-input" input-color type="radio" id="grigio-siderale" name="color-product" value="Grigio Siderale"/>
-                                    <label class="radio-custom-color-label" for="grigio-siderale"></label>
-                                    <label for="grigio-siderale" class="label-dropdown-input">
-                                        <span class="text-label">Grigio-siderale</span>
-                                        <span class="color-label"></span>
-                                    </label>
-                                </div>
-                                <div class="wrap-input">
-                                    <input class="radio-custom-color-input" input-color type="radio" id="argento" name="color-product" value="Argento"/>
-                                    <label class="radio-custom-color-label" for="argento"></label>
-                                    <label for="argento" class="label-dropdown-input">
-                                        <span class="text-label">Argento</span>
-                                        <span class="color-label"></span>
-                                    </label>
-                                </div>
-                                <div class="wrap-input">
-                                    <input class="radio-custom-color-input" input-color type="radio" id="oro" name="color-product" value="Oro"/>
-                                    <label class="radio-custom-color-label" for="oro"></label>
-                                    <label for="oro" class="label-dropdown-input">
-                                        <span class="text-label">Oro</span>
-                                        <span class="color-label"></span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-
-
-
-        <div class="wrap-selection" group-radio-inputs>
-            <p class="label-condition">2. Scegli le Condizioni:
-                <a class="link-information-condition" href="#" data-toggle="modal" data-target="#popover-condition">clicca qui per saperne di più</a>
-            </p>
-
+            <p class="label-condition">1. Scegli il Colore:</p>
             <!-- Button trigger modal -->
-            <a href="#" class="popup-color-btn" data-toggle="modal" data-target="#modalCondition">
-                <span class="selected-condition">Not selected</span>
+            <a href="#" class="popup-color-btn" data-toggle="modal" data-target="#modalColors">
+                <span class="selected-color">Not selected</span>
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </a>
-
             <!-- Modal -->
-            <div class="modal fade dropdown-inputs" id="modalCondition" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal fade dropdown-inputs" id="modalColors" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog dropdown-inputs" role="document">
                     <div class="modal-content">
                         <div class="modal-header header-popup-dropdown">
@@ -233,24 +179,27 @@
                             <div class="wrap-selection" group-radio-inputs>
                                 <div class="wrap-color-inputs">
                                     <div class="wrap-input">
-                                        <input class="radio-custom-color-input" input-condition type="radio" id="good-condition" name="condition-phone"  value="Buono"/>
-                                        <label class="radio-custom-color-label" for="good-condition"></label>
-                                        <label for="good-condition" class="label-dropdown-input">
-                                            <span class="text-label">Buono</span>
+                                        <input class="radio-custom-input" input-color type="radio" id="grigio-siderale" name="color-product" value="Grigio Siderale"/>
+                                        <label class="radio-custom-label" for="grigio-siderale"></label>
+                                        <label for="grigio-siderale" class="label-dropdown-input">
+                                            <span class="text-label">Grigio-siderale</span>
+                                            <span class="color-label"></span>
                                         </label>
                                     </div>
                                     <div class="wrap-input">
-                                        <input class="radio-custom-color-input" input-condition type="radio" id="excellent-condition" name="condition-phone" value="Ottimo"/>
-                                        <label class="radio-custom-color-label" for="excellent-condition"></label>
-                                        <label for="excellent-condition" class="label-dropdown-input">
-                                            <span class="text-label">Ottimo</span>
+                                        <input class="radio-custom-input" input-color type="radio" id="argento" name="color-product" value="Argento"/>
+                                        <label class="radio-custom-label" for="argento"></label>
+                                        <label for="argento" class="label-dropdown-input">
+                                            <span class="text-label">Argento</span>
+                                            <span class="color-label"></span>
                                         </label>
                                     </div>
                                     <div class="wrap-input">
-                                        <input class="radio-custom-color-input" input-condition type="radio" id="perfect-condition" name="condition-phone" value="Perfetto"/>
-                                        <label class="radio-custom-color-label" for="perfect-condition"></label>
-                                        <label for="perfect-condition" class="label-dropdown-input">
-                                            <span class="text-label">Perfetto</span>
+                                        <input class="radio-custom-input" input-color type="radio" id="oro" name="color-product" value="Oro"/>
+                                        <label class="radio-custom-label" for="oro"></label>
+                                        <label for="oro" class="label-dropdown-input">
+                                            <span class="text-label">Oro</span>
+                                            <span class="color-label"></span>
                                         </label>
                                     </div>
                                 </div>
@@ -259,33 +208,137 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <p class="label-condition">3. Scegli la Quantità:</p>
-        <select name="number-product" id="number-product">
-            <option selected value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-        </select>
+            <div class="wrap-selection" group-radio-inputs>
+                <p class="label-condition">2. Scegli le Condizioni:
+                    <a class="link-information-condition" href="#" data-toggle="modal" data-target="#popover-condition">clicca qui per saperne di più</a>
+                </p>
 
+                <!-- Button trigger modal -->
+                <a href="#" class="popup-color-btn" data-toggle="modal" data-target="#modalCondition">
+                    <span class="selected-condition">Not selected</span>
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </a>
 
-                    <p class="label-condition">4.Il tuo prezzo:</p>
-
-
-
-                    <div class="wrap-buy">
-
-                        <p class="price-product sale">519.90€
-                                <span class="old-price">invece che 600.90€</span>
-                                <span class="old-price">Risparmi 50€ (sconto 10%)</span>
-                        </p>
-                        <button class="buy-btn" disabled type="submit">aggiungi al carrello</button>
-
+                <!-- Modal -->
+                <div class="modal fade dropdown-inputs" id="modalCondition" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog dropdown-inputs" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header header-popup-dropdown">
+                                <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span class="fa fa-times fa-lg" aria-hidden="true"></span></button>
+                            </div>
+                            <div class="modal-body clearfix">
+                                <div class="wrap-selection" group-radio-inputs>
+                                    <div class="wrap-color-inputs">
+                                        <div class="wrap-input">
+                                            <input class="radio-custom-input" input-condition type="radio" id="good-condition" name="condition-phone"  value="Buono"/>
+                                            <label class="radio-custom-label" for="good-condition"></label>
+                                            <label for="good-condition" class="label-dropdown-input">
+                                                <span class="text-label">Buono</span>
+                                            </label>
+                                        </div>
+                                        <div class="wrap-input">
+                                            <input class="radio-custom-input" input-condition type="radio" id="excellent-condition" name="condition-phone" value="Ottimo"/>
+                                            <label class="radio-custom-label" for="excellent-condition"></label>
+                                            <label for="excellent-condition" class="label-dropdown-input">
+                                                <span class="text-label">Ottimo</span>
+                                            </label>
+                                        </div>
+                                        <div class="wrap-input">
+                                            <input class="radio-custom-input" input-condition type="radio" id="perfect-condition" name="condition-phone" value="Perfetto"/>
+                                            <label class="radio-custom-label" for="perfect-condition"></label>
+                                            <label for="perfect-condition" class="label-dropdown-input">
+                                                <span class="text-label">Perfetto</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+
+            <p class="label-condition">3. Scegli la Quantità:</p>
+            <!-- Button trigger modal -->
+            <a href="#" class="popup-color-btn" data-toggle="modal" data-target="#modalNumberProduct">
+                <span class="selected-number-product">1</span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <!-- Modal -->
+            <div class="modal fade dropdown-inputs" id="modalNumberProduct" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog dropdown-inputs" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header header-popup-dropdown">
+                            <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span class="fa fa-times fa-lg" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="modal-body clearfix">
+                            <div class="wrap-selection" group-radio-inputs>
+                                <div class="wrap-color-inputs">
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" checked id="one-product" name="number-product"  value="1"/>
+                                        <label class="radio-custom-label" for="one-product"></label>
+                                        <label for="one-product" class="label-dropdown-input">
+                                            <span class="text-label">1</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" id="two-product" name="number-product"  value="2"/>
+                                        <label class="radio-custom-label" for="two-product"></label>
+                                        <label for="two-product" class="label-dropdown-input">
+                                            <span class="text-label">2</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" id="three-product" name="number-product"  value="3"/>
+                                        <label class="radio-custom-label" for="three-product"></label>
+                                        <label for="three-product" class="label-dropdown-input">
+                                            <span class="text-label">3</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" id="four-product" name="number-product"  value="4"/>
+                                        <label class="radio-custom-label" for="four-product"></label>
+                                        <label for="four-product" class="label-dropdown-input">
+                                            <span class="text-label">4</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" id="five-product" name="number-product"  value="5"/>
+                                        <label class="radio-custom-label" for="five-product"></label>
+                                        <label for="five-product" class="label-dropdown-input">
+                                            <span class="text-label">5</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" id="six-product" name="number-product"  value="6"/>
+                                        <label class="radio-custom-label" for="six-product"></label>
+                                        <label for="six-product" class="label-dropdown-input">
+                                            <span class="text-label">6</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" id="seven-product" name="number-product"  value="7"/>
+                                        <label class="radio-custom-label" for="seven-product"></label>
+                                        <label for="seven-product" class="label-dropdown-input">
+                                            <span class="text-label">7</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="label-condition">4.Il tuo prezzo:</p>
+
+            <div class="wrap-buy">
+                <p class="price-product sale">519.90€
+                        <span class="old-price">invece che 600.90€</span>
+                        <span class="old-price">Risparmi 50€ (sconto 10%)</span>
+                </p>
+                <button class="buy-btn" disabled type="submit">aggiungi al carrello</button>
+            </div>
 
 
 

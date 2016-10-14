@@ -46,6 +46,18 @@ $(document).ready(function () {
 
 
 
+    $("input[input-number-product]").change(function() {
+        $('.selected-number-product').empty();
+        var conditionName = $('input[input-number-product]:checked').val();
+        $('.selected-number-product').append(conditionName);
+
+
+    });
+
+
+
+
+
     /******menu-double-click********/
 
     $('.menu-home-products').click(function(event) {

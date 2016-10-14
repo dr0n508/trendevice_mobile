@@ -27,8 +27,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   display: inline-block;
   text-align: left;
   vertical-align: middle;
-  width: auto;
-  min-width: 220px; }
+  width: auto; }
 
 /***********************************custom-theme-elements****************************/
 /************************************************************************************/
@@ -518,17 +517,9 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     .product-section .popup-color-btn i {
       float: right;
       line-height: 25px; }
-  .product-section .select-condition, .product-section #number-product {
-    border: none;
-    background-color: #EEEEEE;
-    width: 100%;
-    border-radius: 5px;
-    padding: 5px 15px;
-    font-size: 18px;
-    color: #222222; }
   .product-section .wrap-selection[disabled] .label-condition {
     color: #dddcdc; }
-  .product-section .wrap-selection[disabled] .radio-custom-btn-label, .product-section .wrap-selection[disabled] .radio-custom-color-label, .product-section .wrap-selection[disabled] .radio-custom-color-input {
+  .product-section .wrap-selection[disabled] .radio-custom-btn-label, .product-section .wrap-selection[disabled] .radio-custom-label, .product-section .wrap-selection[disabled] .radio-custom-input {
     color: #FFFFFF;
     background-color: #dddcdc;
     border: none;
@@ -544,17 +535,17 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
           display: block; } }
   .product-section .wrap-color-inputs {
     vertical-align: middle; }
-  .product-section .selected-color, .product-section .selected-condition {
+  .product-section .selected-color, .product-section .selected-condition, .product-section .selected-number-product {
     font-weight: 400;
     display: inline-block;
     vertical-align: middle;
     font-size: 18px; }
-  .product-section .radio-custom-color-input:not(checked) {
+  .product-section .radio-custom-input:not(checked) {
     position: absolute;
     opacity: 0; }
-  .product-section .radio-custom-color-input:not(checked) + label {
+  .product-section .radio-custom-input:not(checked) + label {
     color: #808080; }
-  .product-section .radio-custom-color-input:checked + label {
+  .product-section .radio-custom-input:checked + label {
     background-color: #2D2D2D; }
   .product-section .wrap-input {
     margin-bottom: 10px;
@@ -562,7 +553,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     padding: 4px 0; }
     .product-section .wrap-input:last-child {
       margin-bottom: 0; }
-    .product-section .wrap-input .radio-custom-color-label {
+    .product-section .wrap-input .radio-custom-label {
       position: absolute;
       content: "";
       left: 0;
@@ -627,35 +618,11 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     background: #77c4ed; }
   .product-section label[for="giallo"] .color-label {
     background: #fdf16f; }
-  .product-section .radio-custom-btn-label {
-    font-size: 19px;
-    background: #EEEEEE;
-    font-weight: 400;
-    padding: 5px 0;
-    border: solid 1px #EEEEEE;
-    width: 32.3%;
-    text-align: center; }
-  .product-section .radio-custom-btn-label {
-    font-size: 19px;
-    background: #EEEEEE;
-    font-weight: 400;
-    padding: 5px 0;
-    border: solid 1px #EEEEEE;
-    width: 32.3%;
-    text-align: center; }
-  .product-section .radio-custom-btn-label.wf {
-    width: 49%; }
-  .product-section .wrap-input-condition {
-    margin-bottom: 30px; }
   .product-section .list-description-product li {
     font-size: 16px;
     padding: 5px; }
   .product-section .list-description-product li:nth-child(odd) {
     background: #EEEEEE; }
-  .product-section label[for="number-product"] {
-    font-size: 21px;
-    font-weight: 400;
-    margin: 10px 0; }
   .product-section .buy-btn {
     text-transform: uppercase;
     border-radius: 7px;
