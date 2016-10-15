@@ -737,7 +737,7 @@ $white-color: #FFFFFF;
 //    display: inline-block;
     vertical-align: middle;
   }
-  .selected-color, .selected-condition, .selected-number-product {
+  .selected-color, .selected-condition, .selected-number-product, .selected-wificell {
     font-weight: 400;
     display: inline-block;
     vertical-align: middle;
@@ -910,15 +910,7 @@ $white-color: #FFFFFF;
 //    margin-bottom: 30px;
 //  }
 
-  .list-description-product {
-    li {
-      font-size: 16px;
-      padding: 5px;
-    }
-    li:nth-child(odd) {
-      background: $light-gray-color;
-    }
-  }
+
 //  label[for="number-product"] {
 //    font-size: 21px;
 //    font-weight: 400;
@@ -980,6 +972,77 @@ $white-color: #FFFFFF;
   .old-price {display: inline;}
 }
 /*****************/
+
+
+
+/**************************accordion-product-page********************/
+.accordion-product-page {
+  padding-top: 30px;
+  .panel-default>.panel-heading {
+    text-transform: uppercase;
+    background-color: #EEEEEE;
+    border-radius: 5px;
+    padding: 0;
+    a {
+      font-size: 15px;
+      display: block;
+      padding: 10px;
+    }
+    i {
+      float: right;
+    }
+    .panel-title {
+      a[aria-expanded="true"] {
+        .fa-plus {
+          display: none;
+        }
+      }
+      a[aria-expanded="false"] {
+        .fa-minus {
+          display: none;
+        }
+      }
+    }
+  }
+  .panel-body {
+    padding: 10px;
+  }
+  .panel-group .panel {
+    border: none;
+  }
+  .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    background-color: #EEEEEE;
+    margin-top: 10px;
+    border: none;
+  }
+  .list-description-product {
+    font-weight: 300;
+    font-size: 15px;
+    li {
+      margin-bottom: 10px;
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+  .our-advantages {
+    h2 {
+      font-size: 20px;
+    }
+    padding: 0;
+    li {
+      padding: 60px 0 20px 0;
+      font-size: 15px;
+    }
+  }
+}
+
+.wrap-selection[disabled] .popup-color-btn {
+  pointer-events: none;
+  color: #dddcdc;
+}
+
+
 
 
 /*****************************************breadcrumbs**cart01************************/
@@ -1299,64 +1362,67 @@ $white-color: #FFFFFF;
 
 /*****accordion-custom-styles****/
 
-.panel-default>.panel-heading {
-  background-color: #dcdcdc;
-  border-radius: 0;
-  a {
-    text-decoration: none;
-    display: block;
+.information {
+  .panel-default>.panel-heading {
+    background-color: #dcdcdc;
+    border-radius: 0;
+    a {
+      text-decoration: none;
+      display: block;
+    }
   }
-}
 
 
-.panel-default>.panel-heading.open {
-  background-color: $dark-gray-color;
-  border-radius: 0;
-  a {
-    text-decoration: none;
-    display: block;
+  .panel-default>.panel-heading.open {
+    background-color: $dark-gray-color;
+    border-radius: 0;
+    a {
+      text-decoration: none;
+      display: block;
+    }
   }
-}
 
-.panel-default>.panel-heading a {
-  @media only screen and (max-width: 460px) {
-    font-size: 19px;
-    padding: 5px 0;
+  .panel-default>.panel-heading a {
+    @media only screen and (max-width: 460px) {
+      font-size: 19px;
+      padding: 5px 0;
+    }
   }
-}
 
 
-.panel-default>.panel-heading+.panel-collapse>.panel-body {
-  background-color: $light-gray-color;
-  margin-top: 5px;
-  padding: 10px 40px 10px 40px;
-  border: none;
-}
-.panel-group .panel {
-  border: none;
-  border-radius: 0;
-  margin-top: 5px;
-  .facebook-block {
-    text-align: center;
-    border-top: solid 1px #8e9092;
-    padding-top: 30px;
-    margin-top: 30px;
-    position: relative;
-    &:before {
-      content: "oppure";
-      position: absolute;
-      display: inline-block;
+  .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    background-color: $light-gray-color;
+    margin-top: 5px;
+    padding: 10px 40px 10px 40px;
+    border: none;
+  }
+  .panel-group .panel {
+    border: none;
+    border-radius: 0;
+    margin-top: 5px;
+    .facebook-block {
       text-align: center;
-      padding: 10px 5px;
-      top: 0%;
-      left: 50%;
-      margin-top: -23px;
-      margin-left: -25px;
-      background-color: $light-gray-color;
-      z-index: 2;
+      border-top: solid 1px #8e9092;
+      padding-top: 30px;
+      margin-top: 30px;
+      position: relative;
+      &:before {
+        content: "oppure";
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 5px;
+        top: 0%;
+        left: 50%;
+        margin-top: -23px;
+        margin-left: -25px;
+        background-color: $light-gray-color;
+        z-index: 2;
+      }
     }
   }
 }
+
 
 .facebook-btn {
   color: $white-color;

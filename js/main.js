@@ -1,25 +1,5 @@
 $(document).ready(function () {
 
-//    $('.slider-about-us').bxSlider({
-//        slideWidth: 220,
-//        minSlides: 1,
-//        maxSlides: 5,
-//        moveSlides: 1,
-//        slideMargin: 10,
-//        pager: false,
-//        infiniteLoop: false
-//    });
-//
-//    $('.offer-for-you').bxSlider({
-//        slideWidth: 380,
-//        minSlides: 1,
-//        maxSlides: 3,
-//        moveSlides: 1,
-//        slideMargin: 10,
-//        pager: false,
-//        infiniteLoop: false
-//    });
-
     $("input[input-color]").change(function() {
         $('.selected-color').empty();
         var productCategory = $('.product-section').attr("id").split('-')[0];
@@ -40,18 +20,18 @@ $(document).ready(function () {
         $('.selected-condition').empty();
         var conditionName = $('input[input-condition]:checked').val();
         $('.selected-condition').append(conditionName);
-
-
     });
-
-
 
     $("input[input-number-product]").change(function() {
         $('.selected-number-product').empty();
-        var conditionName = $('input[input-number-product]:checked').val();
-        $('.selected-number-product').append(conditionName);
+        var numberProduct = $('input[input-number-product]:checked').val();
+        $('.selected-number-product').append(numberProduct);
+    });
 
-
+    $("input[input-wifi-cell]").change(function() {
+        $('.selected-wificell').empty();
+        var wifiCell = $('input[input-wifi-cell]:checked').val();
+        $('.selected-wificell').append(wifiCell);
     });
 
 
@@ -174,11 +154,19 @@ $(document).ready(function () {
     $('.product-section form input').change(function() {
         var selectorMain = $(this).closest('*[group-radio-inputs]').next('*[group-radio-inputs]');
 
+
+        /*****************/
+//        $('.wrap-selection[disabled] *[qqq]').text('fff');
+        /******************/
+
         selectorMain.removeAttr('disabled').next('*[group-radio-inputs]').attr("disabled", "");
         selectorMain.find('input:checked').removeAttr('checked');
 
         var numberInput = $('.product-section form').find('input:radio:checked').length;
         var numberGroupRadio = $('.product-section form').find('*[group-radio-inputs]').length;
+
+        console.log(numberInput);
+        console.log(numberGroupRadio);
 
         if (numberInput >= numberGroupRadio) {
             $('.buy-btn').removeAttr('disabled');
