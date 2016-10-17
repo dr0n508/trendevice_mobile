@@ -347,12 +347,12 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     background: #EEEEEE;
     padding: 20px; }
   .our-advantages h2 {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 10px; }
   .our-advantages li {
-    font-size: 17px;
-    padding: 60px 10px 20px 20px;
+    font-size: 15px;
+    padding: 60px 0 20px 0;
     text-align: center; }
   .our-advantages .advantage01 {
     background: url("../img/advantage01.png") 50% 2% no-repeat;
@@ -379,6 +379,9 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   font-weight: 600; }
 .version-product .model.not-available a {
   pointer-events: none; }
+.version-product .model.col-xs-3 {
+  padding-left: 5px;
+  padding-right: 5px; }
 .version-product .model .wrap-img-model {
   position: relative;
   display: block; }
