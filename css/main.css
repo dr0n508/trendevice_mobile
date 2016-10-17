@@ -345,13 +345,14 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   padding-top: 30px; }
   .our-advantages .wrap-section {
     background: #EEEEEE;
-    padding: 20px; }
+    padding: 10px 10px 0 10px;
+    margin-bottom: 20px; }
   .our-advantages h2 {
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px; }
   .our-advantages li {
-    font-size: 15px;
+    font-size: 14px;
     padding: 60px 0 20px 0;
     text-align: center; }
   .our-advantages .advantage01 {
@@ -717,7 +718,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       font-size: 20px; }
     .accordion-product-page .our-advantages li {
       padding: 60px 0 20px 0;
-      font-size: 15px; }
+      font-size: 14px; }
 
 .wrap-selection[disabled] .popup-color-btn {
   pointer-events: none;
