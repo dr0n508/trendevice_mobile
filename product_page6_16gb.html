@@ -148,132 +148,292 @@
 </header>
 <section id="iPhone-6" class="product-section">
     <div class="container">
+        <ul class="slider-product-page">
+            <li><img src="img/products-img/iPhone/6/6_grigio-siderale.png"></li>
+            <li><img src="img/products-img/iPhone/6/6_grigio-siderale_b.png"></li>
+        </ul>
         <h1>iPHONE 6 16 Gb</h1>
+        <p class="description-product-model">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nihil quia recusandae.</p>
+
         <form action="#">
-            <div class="col-xs-6">
-                <!--start tabs-->
-                <div>
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="home">
-                            <div class="wrap-img">
-                                <img src="img/products-img/iPhone/6/6_grigio-siderale.png">
-                            </div>
+
+        <div class="wrap-selection" group-radio-inputs>
+            <p class="label-condition">1. Scegli il Colore:</p>
+            <!-- Button trigger modal -->
+            <a href="#" class="popup-color-btn" data-toggle="modal" data-target="#modalColors">
+                <span class="selected-color">Not selected</span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <!-- Modal -->
+            <div class="modal fade dropdown-inputs" id="modalColors" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog dropdown-inputs" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header header-popup-dropdown">
+                            <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span class="fa fa-times fa-lg" aria-hidden="true"></span></button>
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="profile">
-                            <div class="wrap-img">
-                                <img src="img/products-img/iPhone/6/6_grigio-siderale_b.png">
+                        <div class="modal-body clearfix">
+                            <div class="wrap-selection">
+                                <div class="wrap-color-inputs">
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-color type="radio" id="grigio-siderale" name="color-product" value="Grigio Siderale"/>
+                                        <label class="radio-custom-label" for="grigio-siderale"></label>
+                                        <label for="grigio-siderale" class="label-dropdown-input">
+                                            <span class="text-label">Grigio-siderale</span>
+                                            <span class="color-label"></span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-color type="radio" id="argento" name="color-product" value="Argento"/>
+                                        <label class="radio-custom-label" for="argento"></label>
+                                        <label for="argento" class="label-dropdown-input">
+                                            <span class="text-label">Argento</span>
+                                            <span class="color-label"></span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-color type="radio" id="oro" name="color-product" value="Oro"/>
+                                        <label class="radio-custom-label" for="oro"></label>
+                                        <label for="oro" class="label-dropdown-input">
+                                            <span class="text-label">Oro</span>
+                                            <span class="color-label"></span>
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!--end tabs-->
             </div>
-            <div class="col-xs-6 wrap-buy">
-                <label for="number-product">Quantità:</label>
-                <select name="number-product" id="number-product">
-                    <option selected value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                </select>
-                <p class="price-product sale">
-                    <span class="old-price">
-                        <span class="price">599.90€</span>
-                        <span class="discount-percent">-20%</span>
-                    </span>
-                    519.90€
+        </div>
+
+        <div class="wrap-selection" group-radio-inputs disabled>
+            <p class="label-condition">2. Scegli le Condizioni:
+                <a class="link-information-condition" href="#" data-toggle="modal" data-target="#popover-condition">clicca qui per saperne di più</a>
+            </p>
+            <!-- Button trigger modal -->
+            <a href="#" class="popup-color-btn" data-toggle="modal" data-target="#modalCondition">
+                <span class="selected-condition" value-input>Not selected</span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <!-- Modal -->
+            <div class="modal fade dropdown-inputs" id="modalCondition" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog dropdown-inputs" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header header-popup-dropdown">
+                            <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span class="fa fa-times fa-lg" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="modal-body clearfix">
+                            <div class="wrap-selection">
+                                <div class="wrap-color-inputs">
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-condition type="radio" id="good-condition" name="condition-phone"  value="Buono"/>
+                                        <label class="radio-custom-label" for="good-condition"></label>
+                                        <label for="good-condition" class="label-dropdown-input">
+                                            <span class="text-label">Buono</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-condition type="radio" id="excellent-condition" name="condition-phone" value="Ottimo"/>
+                                        <label class="radio-custom-label" for="excellent-condition"></label>
+                                        <label for="excellent-condition" class="label-dropdown-input">
+                                            <span class="text-label">Ottimo</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-condition type="radio" id="perfect-condition" name="condition-phone" value="Perfetto"/>
+                                        <label class="radio-custom-label" for="perfect-condition"></label>
+                                        <label for="perfect-condition" class="label-dropdown-input">
+                                            <span class="text-label">Perfetto</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <p class="label-condition">3. Scegli la Quantità:</p>
+            <!-- Button trigger modal -->
+            <a href="#" class="popup-color-btn" data-toggle="modal" data-target="#modalNumberProduct">
+                <span class="selected-number-product">1</span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <!-- Modal -->
+            <div class="modal fade dropdown-inputs" id="modalNumberProduct" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog dropdown-inputs" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header header-popup-dropdown">
+                            <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close"><span class="fa fa-times fa-lg" aria-hidden="true"></span></button>
+                        </div>
+                        <div class="modal-body clearfix">
+                            <div class="wrap-selection" group-radio-inputs>
+                                <div class="wrap-color-inputs">
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" checked id="one-product" name="number-product"  value="1"/>
+                                        <label class="radio-custom-label" for="one-product"></label>
+                                        <label for="one-product" class="label-dropdown-input">
+                                            <span class="text-label">1</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" id="two-product" name="number-product"  value="2"/>
+                                        <label class="radio-custom-label" for="two-product"></label>
+                                        <label for="two-product" class="label-dropdown-input">
+                                            <span class="text-label">2</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" id="three-product" name="number-product"  value="3"/>
+                                        <label class="radio-custom-label" for="three-product"></label>
+                                        <label for="three-product" class="label-dropdown-input">
+                                            <span class="text-label">3</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" id="four-product" name="number-product"  value="4"/>
+                                        <label class="radio-custom-label" for="four-product"></label>
+                                        <label for="four-product" class="label-dropdown-input">
+                                            <span class="text-label">4</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" id="five-product" name="number-product"  value="5"/>
+                                        <label class="radio-custom-label" for="five-product"></label>
+                                        <label for="five-product" class="label-dropdown-input">
+                                            <span class="text-label">5</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" id="six-product" name="number-product"  value="6"/>
+                                        <label class="radio-custom-label" for="six-product"></label>
+                                        <label for="six-product" class="label-dropdown-input">
+                                            <span class="text-label">6</span>
+                                        </label>
+                                    </div>
+                                    <div class="wrap-input">
+                                        <input class="radio-custom-input" input-number-product type="radio" id="seven-product" name="number-product"  value="7"/>
+                                        <label class="radio-custom-label" for="seven-product"></label>
+                                        <label for="seven-product" class="label-dropdown-input">
+                                            <span class="text-label">7</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="label-condition">4.Il tuo prezzo:</p>
+
+            <div class="wrap-buy">
+                <p class="price-product sale">519.90€
+                    <span class="old-price">invece che 600.90€</span>
+                    <span class="old-price">Risparmi 50€ (sconto 10%)</span>
                 </p>
-                <button class="buy-btn" disabled type="submit">COMPRA ADESSO</button>
+                <button class="buy-btn" disabled type="submit">aggiungi al carrello</button>
             </div>
-            <div class="col-xs-12">
-                <div class="wrap-selection" group-radio-inputs>
-                    <p class="label-condition">Scegli il Colore:</p>
-                    <div class="wrap-color-inputs">
-                        <input class="radio-custom-color-input" type="radio" id="grigio-siderale" name="color-product" value="Grigio Siderale"/>
-                        <label class="radio-custom-color-label" for="grigio-siderale"><span></span></label>
 
-                        <input class="radio-custom-color-input" type="radio" id="argento" name="color-product" value="Argento"/>
-                        <label class="radio-custom-color-label" for="argento"><span></span></label>
-
-                        <input class="radio-custom-color-input" type="radio" id="oro" name="color-product" value="Oro"/>
-                        <label class="radio-custom-color-label" for="oro"><span></span></label>
-                    </div>
-                    <span class="selected-color"></span>
-                </div>
-
-                <div class="wrap-selection" group-radio-inputs disabled>
-                    <p class="label-condition">Scegli le Condizioni:
-                        <a class="information-condition" href="#" data-toggle="modal" data-target="#popover-condition">i</a>
-                        <a class="link-information-condition" href="#" data-toggle="modal" data-target="#popover-condition">clicca qui per saperne di più</a></p>
-                    <div class="wrap-input-condition">
-                        <input class="radio-custom-btn-input" type="radio" id="good-condition" name="condition-phone" value="good-condition"/>
-                        <label class="radio-custom-btn-label" for="good-condition"><span>buono</span></label>
-
-                        <input class="radio-custom-btn-input" disabled type="radio" id="excellent-condition" name="condition-phone" value="excellent-condition"/>
-                        <label class="radio-custom-btn-label" for="excellent-condition"><span>ottimo</span></label>
-
-                        <input class="radio-custom-btn-input" type="radio" id="perfect-condition" name="condition-phone" value="perfect-condition"/>
-                        <label class="radio-custom-btn-label" for="perfect-condition"><span>perfetto</span></label>
-                    </div>
-                </div>
-                <ul class="list-description-product">
-                    <li>Cavo USB e Alimentatore: Originali Apple</li>
-                    <li>Scatola: Scatola TrenDevice designed for iPhone</li>
-                    <li>Batteria: In stato ottimale</li>
-                    <li>Garanzia: Garanzia 2 anni TrenDevice</li>
-                    <li>Diritto di Recesso: 14 giorni dalla ricezione zero costi per te</li>
-                </ul>
-            </div>
         </form>
     </div>
 </section>
+<section class="accordion-product-page">
+    <div class="container">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a class="clearfix" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            informazioni sul prodotto <i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-minus" aria-hidden="true"></i>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                        <ul class="list-description-product">
+                            <li><span>Cavo USB e Alimentatore:</span> Originali Apple</li>
+                            <li><span>Scatola:</span> Scatola TrenDevice designed for iPhone</li>
+                            <li><span>Batteria:</span> In stato ottimale</li>
+                            <li><span>Garanzia:</span> Garanzia 2 anni TrenDevice</li>
+                            <li><span>Diritto di Recesso:</span> 14 giorni dalla ricezione zero costi per te</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            vantaggi trendevice <i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-minus" aria-hidden="true"></i>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                        <section class="our-advantages">
+                            <!--<div class="container">-->
+                            <h2>I VANTAGGI TRENDEVICE:</h2>
+                            <ul>
+                                <li class="advantage01">
+                                    Il funzionamento di ogni iPhone è garantito al 100% da rigorosi test tecnici: il personale specializzato di
+                                    TrenDevice effettua 37 test su ogni dispositivo e cancella completamente i dati del precedente utilizzatore.
+                                </li>
+                                <li class="advantage02">
+                                    Risparmi fino al 30% rispetto ad un prodotto nuovo
+                                </li>
+                                <li class="advantage03">
+                                    Puoi trovare iPhone di serie precedenti non più in commercio sul mercato del nuovo: se non ti è necessario l’ultimo modello
+                                    e puoi risparmiare ancora di più, meglio no?
+                                </li>
+                                <li class="advantage04">
+                                    Contribuisci a salvaguardare l’ambiente con un consumo hi-tech consapevole. Ad esempio, ogni volta che un consumatore
+                                    acquista un iPhone di seconda mano, il Pianeta ringrazia per aver evitato tra 60 e 90 Kg di emissioni di CO2.
+                                </li>
+                            </ul>
+                            <!--</div>-->
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            perchè fidarsi di trendevice <i class="fa fa-plus" aria-hidden="true"></i><i class="fa fa-minus" aria-hidden="true"></i>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
 
-<section class="our-advantages">
-    <div class="container">
-        <h2>I VANTAGGI TRENDEVICE:</h2>
-        <ul>
-            <li class="advantage01">
-                Il funzionamento di ogni iPhone è garantito al 100% da rigorosi test tecnici: il personale specializzato di
-                TrenDevice effettua 37 test su ogni dispositivo e cancella completamente i dati del precedente utilizzatore.
-            </li>
-            <li class="advantage02">
-                Risparmi fino al 30% rispetto ad un prodotto nuovo
-            </li>
-            <li class="advantage03">
-                Puoi trovare iPhone di serie precedenti non più in commercio sul mercato del nuovo: se non ti è necessario l’ultimo modello
-                e puoi risparmiare ancora di più, meglio no?
-            </li>
-            <li class="advantage04">
-                Contribuisci a salvaguardare l’ambiente con un consumo hi-tech consapevole. Ad esempio, ogni volta che un consumatore
-                acquista un iPhone di seconda mano, il Pianeta ringrazia per aver evitato tra 60 e 90 Kg di emissioni di CO2.
-            </li>
-        </ul>
-    </div>
-</section>
-<section class="advantages">
-    <div class="container">
-        <ul>
-            <li class="col-xs-6">
-                <img src="img/money-back-ico.png" alt="money-back"/>
-                <p>soddisfatti o rimborsati</p>
-            </li>
-            <li class="col-xs-6">
-                <img src="img/satisfied-customers-ico.png" alt="satisfied-customers"/>
-                <p>99% clienti soddisfatti</p>
-            </li>
-            <li class="col-xs-6">
-                <img src="img/warranty-ico.png" alt="warranty"/>
-                <p>garanzia 2 anni</p>
-            </li>
-            <li class="col-xs-6">
-                <img src="img/free14-ico.png" alt="free14"/>
-                <p>reso gratis 14 giorni</p>
-            </li>
-        </ul>
+                        <section class="advantages">
+                            <div class="container">
+                                <ul>
+                                    <li class="col-xs-6">
+                                        <img src="img/money-back-ico.png" alt="money-back"/>
+                                        <p>soddisfatti o rimborsati</p>
+                                    </li>
+                                    <li class="col-xs-6">
+                                        <img src="img/satisfied-customers-ico.png" alt="satisfied-customers"/>
+                                        <p>99% clienti soddisfatti</p>
+                                    </li>
+                                    <li class="col-xs-6">
+                                        <img src="img/warranty-ico.png" alt="warranty"/>
+                                        <p>garanzia 2 anni</p>
+                                    </li>
+                                    <li class="col-xs-6">
+                                        <img src="img/free14-ico.png" alt="free14"/>
+                                        <p>reso gratis 14 giorni</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <div id="buttonUp" class="button-up text-center">
