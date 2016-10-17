@@ -1066,7 +1066,7 @@ $white-color: #FFFFFF;
 .breadcrumbs {
   text-align: center;
   p {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 10px;
     .active {
       color: $yellow-color;
@@ -1074,12 +1074,29 @@ $white-color: #FFFFFF;
     .stage span {font-size: 34px}
 
   }
+  @media only screen and (max-width: 660px) {
+    p {
+      font-size: 20px;
+      .stage span {font-size: 30px}
+    }
+  }
+  @media only screen and (max-width: 560px) {
+    p {
+      font-size: 18px;
+      .stage span {font-size: 28px}
+    }
+  }
   @media only screen and (max-width: 460px) {
+    p {
+      font-size: 14px;
+      .stage span {font-size: 18px}
+    }
+  }
+  @media only screen and (max-width: 360px) {
     p {
       font-size: 12px;
       .stage span {font-size: 20px}
     }
-
   }
 }
 
@@ -1095,7 +1112,7 @@ $white-color: #FFFFFF;
   }
   form {
     background: $light-gray-color;
-    padding: 10px 10px;
+    padding: 20px 10px;
   }
   .list-product li {
     margin-bottom: 20px;
@@ -1132,7 +1149,7 @@ $white-color: #FFFFFF;
     text-align: right;
   }
   .promoCode {
-    margin-top: 20px;
+    margin: 35px 0;
     label {
       width: 100%;
     }
@@ -1140,12 +1157,12 @@ $white-color: #FFFFFF;
       border: none;
       outline: none;
       margin: 10px 0;
-      padding: 5px;
+      padding: 8px 5px;
     }
     a {
       color: $white-color;
       background: $dark-gray-color;
-      padding: 7px 20px;
+      padding: 10px 20px;
       &:hover {
         text-decoration: none;
       }
@@ -1207,7 +1224,7 @@ $white-color: #FFFFFF;
     border: none;
     font-size: 16px;
     margin: 4px 0;
-    padding: 5px;
+    padding: 8px;
   }
   address {
     margin-bottom: 10px;
@@ -1360,10 +1377,10 @@ $white-color: #FFFFFF;
   &:before {
     color: $blue-color;
     content: "\2714";
-    font-size: 36px;
+    font-size: 30px;
     position: absolute;
-    bottom: -12px;
-    right: -12px;
+    bottom: -9px;
+    right: -9px;
   }
 }
 .checkbox-custom-label {
@@ -1483,14 +1500,14 @@ $white-color: #FFFFFF;
     margin-bottom: 10px;
   }
   .wrap {
-    padding: 10px;
+    padding: 20px 10px;
     background: $light-gray-color;
     margin-bottom: 15px;
   }
   .wrap-table {
     padding-right: 5px;
     padding-left: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
   }
 
 
@@ -1504,7 +1521,7 @@ $white-color: #FFFFFF;
   }
   .header-block {
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .name-product, .text-delivery, .text-total-price {
     width: 80%;

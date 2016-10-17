@@ -729,13 +729,28 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 .breadcrumbs {
   text-align: center; }
   .breadcrumbs p {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 10px; }
     .breadcrumbs p .active {
       color: #F79A1F; }
     .breadcrumbs p .stage span {
       font-size: 34px; }
+  @media only screen and (max-width: 660px) {
+    .breadcrumbs p {
+      font-size: 20px; }
+      .breadcrumbs p .stage span {
+        font-size: 30px; } }
+  @media only screen and (max-width: 560px) {
+    .breadcrumbs p {
+      font-size: 18px; }
+      .breadcrumbs p .stage span {
+        font-size: 28px; } }
   @media only screen and (max-width: 460px) {
+    .breadcrumbs p {
+      font-size: 14px; }
+      .breadcrumbs p .stage span {
+        font-size: 18px; } }
+  @media only screen and (max-width: 360px) {
     .breadcrumbs p {
       font-size: 12px; }
       .breadcrumbs p .stage span {
@@ -752,7 +767,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     padding: 5px 15px; }
   .product-basket form {
     background: #EEEEEE;
-    padding: 10px 10px; }
+    padding: 20px 10px; }
   .product-basket .list-product li {
     margin-bottom: 20px;
     display: flex; }
@@ -782,18 +797,18 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     float: left;
     text-align: right; }
   .product-basket .promoCode {
-    margin-top: 20px; }
+    margin: 35px 0; }
     .product-basket .promoCode label {
       width: 100%; }
     .product-basket .promoCode input {
       border: none;
       outline: none;
       margin: 10px 0;
-      padding: 5px; }
+      padding: 8px 5px; }
     .product-basket .promoCode a {
       color: #FFFFFF;
       background: #2D2D2D;
-      padding: 7px 20px; }
+      padding: 10px 20px; }
       .product-basket .promoCode a:hover {
         text-decoration: none; }
   @media only screen and (max-width: 460px) {
@@ -840,7 +855,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     border: none;
     font-size: 16px;
     margin: 4px 0;
-    padding: 5px; }
+    padding: 8px; }
   .information-client address {
     margin-bottom: 10px; }
   .information-client .big-yellow-btn {
@@ -960,10 +975,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .checkbox-custom:checked + label:before {
     color: #2889c2;
     content: "\2714";
-    font-size: 36px;
+    font-size: 30px;
     position: absolute;
-    bottom: -12px;
-    right: -12px; }
+    bottom: -9px;
+    right: -9px; }
 
 .checkbox-custom-label {
   width: 18px;
@@ -1053,13 +1068,13 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .control-card .wrap-table address {
     margin-bottom: 10px; }
   .control-card .wrap {
-    padding: 10px;
+    padding: 20px 10px;
     background: #EEEEEE;
     margin-bottom: 15px; }
   .control-card .wrap-table {
     padding-right: 5px;
     padding-left: 5px;
-    padding-bottom: 15px; }
+    padding-bottom: 25px; }
   .control-card h2 {
     color: #FFFFFF;
     background: #2D2D2D;
@@ -1068,7 +1083,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     padding: 5px 15px; }
   .control-card .header-block {
     font-weight: 600;
-    margin-bottom: 5px; }
+    margin-bottom: 10px; }
   .control-card .name-product, .control-card .text-delivery, .control-card .text-total-price {
     width: 80%;
     float: left;
