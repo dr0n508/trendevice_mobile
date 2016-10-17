@@ -707,18 +707,6 @@ $white-color: #FFFFFF;
       line-height: 25px;
     }
   }
-//  .select-condition {
-//    border: none;
-//    background-color: $light-gray-color;
-//    width: 100%;
-//    border-radius: 5px;
-//    padding: 5px 15px;
-//    font-size: 18px;
-//    color: $black-color;
-//
-//
-//
-//  }
 
   .wrap-selection[disabled] {
     .label-condition {
@@ -759,10 +747,20 @@ $white-color: #FFFFFF;
 
     }
   }
+  .radio-custom-input[disabled]+.radio-custom-label {
+    border-color: #dddcdc;
+  }
+  .radio-custom-input[disabled]~label {
 
-//  .radio-custom-btn-input[disabled]+label {
-//    color: #b2b3b4;
-//  }
+    .color-label {
+      background-color: #dddcdc;
+      border: none;
+    }
+    .text-label {
+      color: #dddcdc;
+    }
+
+  }
 
   .radio-custom-input:not(checked) {
     position: absolute;

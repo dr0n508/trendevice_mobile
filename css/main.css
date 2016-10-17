@@ -558,6 +558,13 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     display: inline-block;
     vertical-align: middle;
     font-size: 18px; }
+  .product-section .radio-custom-input[disabled] + .radio-custom-label {
+    border-color: #dddcdc; }
+  .product-section .radio-custom-input[disabled] ~ label .color-label {
+    background-color: #dddcdc;
+    border: none; }
+  .product-section .radio-custom-input[disabled] ~ label .text-label {
+    color: #dddcdc; }
   .product-section .radio-custom-input:not(checked) {
     position: absolute;
     opacity: 0; }
