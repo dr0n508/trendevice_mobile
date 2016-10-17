@@ -34,6 +34,11 @@ $(document).ready(function () {
         $('.selected-wificell').append(wifiCell);
     });
 
+    $("input[input-size-watch]").change(function() {
+        $('.selected-size-watch').empty();
+        var sizeWatch = $('input[input-size-watch]:checked').val();
+        $('.selected-size-watch').append(sizeWatch);
+    });
 
     /******menu-double-click********/
 

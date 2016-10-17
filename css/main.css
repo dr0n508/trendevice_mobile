@@ -538,7 +538,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
           display: block; } }
   .product-section .wrap-color-inputs {
     vertical-align: middle; }
-  .product-section .selected-color, .product-section .selected-condition, .product-section .selected-number-product, .product-section .selected-wificell {
+  .product-section .selected-color, .product-section .selected-condition, .product-section .selected-number-product, .product-section .selected-wificell, .product-section .selected-size-watch {
     font-weight: 400;
     display: inline-block;
     vertical-align: middle;
