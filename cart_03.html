@@ -151,250 +151,217 @@
     <div class="information col-md-9">
         <form action="#">
             <section class="information-client">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <!--<div class="panel panel-default">-->
-                <!--<div class="panel-heading open" role="tab" id="headingZero">-->
-                    <!--<h2 class="panel-title">-->
-                        <!--<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseZero" aria-expanded="true" aria-controls="collapseZero">-->
-                            <!--<span>1</span>Email-->
-                        <!--</a>-->
-                    <!--</h2>-->
-                <!--</div>-->
-                <!--<div id="collapseZero" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingZero">-->
-                    <!--<div class="panel-body authentication">-->
-                        <!--<div class="wrap-inputs">-->
-                            <!--<form action="">-->
-                                <!--<p class="header-input">Inserisci la tua email per continuare con l’ordine</p>-->
-                                <!--<div>-->
-                                    <!--<label for="email-client">Email:</label>-->
-                                    <!--<input type="email" id="email-client"/>-->
-                                <!--</div>-->
-                                <!--<input class="small-gray-btn" type="submit" value="Avanti"/>-->
-                            <!--</form>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading open" role="tab" id="headingOne">
+                            <h2 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span>2</span>Registrati
+                                </a>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body authentication">
+                                <div class="wrap-inputs col-xs-12">
+                                    <form action="">
+                                        <p class="header-input">Sei un nuovo utente? Registrati ora</p>
+                                        <div>
+                                            <label for="new-password-client">Scegli la tua password:</label>
+                                            <input type="text" id="new-password-client"/>
+                                        </div>
+                                        <div>
+                                            <label for="new-confirm-password">Conferma la tua password:</label>
+                                            <input type="text" id="new-confirm-password"/>
+                                        </div>
+                                        <input id="next-new-user" class="small-gray-btn" type="button" value="Continua"/>
+                                    </form>
+                                    <div class="facebook-block">
 
-
-                <div class="panel panel-default">
-                    <div class="panel-heading open" role="tab" id="headingOne">
-                        <h2 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <span>2</span>Registrati
-                            </a>
-                        </h2>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body authentication">
-                            <div class="wrap-inputs col-xs-12">
-                                <form action="">
-                                    <p class="header-input">Sei un nuovo utente? Registrati ora</p>
-                                    <div>
-                                        <label for="new-password-client">Scegli la tua password:</label>
-                                        <input type="text" id="new-password-client"/>
+                                        <a href="#" id="next-fb-user" class="facebook-btn"><i class="fa fa-facebook fa-lg"></i><span>Accedi con <b>Facebook</b></span></a>
                                     </div>
-                                    <div>
-                                        <label for="new-confirm-password">Conferma la tua password:</label>
-                                        <input type="text" id="new-confirm-password"/>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h2 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="disabled" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span>3</span>Indirizzo di fatturazione
+                                </a>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" user-login-block2 class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <div id="inputs-payment-information">
+                                    <div class="wrap-inputs col-lg-6">
+                                        <label class="label-small" for="name-client">Nome:</label>
+                                        <input type="text" name="name-client" id="name-client"/>
+
+                                        <label class="label-small" for="address-client">Indirizzo:</label>
+                                        <input type="text" name="address-client" id="address-client"/>
+
+                                        <label class="label-small" for="city-client">Città:</label>
+                                        <input type="text" name="city-client" id="city-client"/>
+
+                                        <label class="label-small" for="state-client">Stato:</label>
+                                        <input type="text" name="state-client" id="state-client"/>
+
+                                        <label class="label-small" for="phone-client">Telefono:</label>
+                                        <input type="text" name="phone-client" id="phone-client"/>
+
+                                        <label class="label-small" for="tax-client">Codice fiscale:</label>
+                                        <input type="text" name="tax-client" id="tax-client"/>
                                     </div>
-                                    <input id="next-new-user" class="small-gray-btn" type="button" value="Continua"/>
-                                </form>
-                                <div class="facebook-block">
+                                    <div class="wrap-inputs col-lg-6">
+                                        <label class="label-small" for="surname-client">Cognome:</label>
+                                        <input type="text" name="surname-client" id="surname-client"/>
 
-                                    <a href="#" id="next-fb-user" class="facebook-btn"><i class="fa fa-facebook fa-lg"></i><span>Accedi con <b>Facebook</b></span></a>
-                                </div>
+                                        <label class="label-small" for="post-code-client">Cap:</label>
+                                        <input type="text" name="post-code-client" id="post-code-client"/>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                    <h2 class="panel-title">
-                        <a class="collapsed" role="button" data-toggle="disabled" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <span>3</span>Indirizzo di fatturazione
-                        </a>
-                    </h2>
-                </div>
-                <div id="collapseTwo" user-login-block2 class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                    <div class="panel-body">
-                        <div id="inputs-payment-information">
-                            <div class="wrap-inputs col-lg-6">
-                                <label class="label-small" for="name-client">Nome:</label>
-                                <input type="text" name="name-client" id="name-client"/>
-
-                                <label class="label-small" for="address-client">Indirizzo:</label>
-                                <input type="text" name="address-client" id="address-client"/>
-
-                                <label class="label-small" for="city-client">Città:</label>
-                                <input type="text" name="city-client" id="city-client"/>
-
-                                <label class="label-small" for="state-client">Stato:</label>
-                                <input type="text" name="state-client" id="state-client"/>
-
-                                <label class="label-small" for="phone-client">Telefono:</label>
-                                <input type="text" name="phone-client" id="phone-client"/>
-
-                                <label class="label-small" for="tax-client">Codice fiscale:</label>
-                                <input type="text" name="tax-client" id="tax-client"/>
-                            </div>
-
-                            <div class="wrap-inputs col-lg-6">
-                                <label class="label-small" for="surname-client">Cognome:</label>
-                                <input type="text" name="surname-client" id="surname-client"/>
-
-                                <label class="label-small" for="post-code-client">Cap:</label>
-                                <input type="text" name="post-code-client" id="post-code-client"/>
-
-                                <label class="label-small" for="province-client">Provincia:</label>
-                                <input type="text" name="province-client" id="province-client"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                        <h2 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="disabled" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <span>4</span>Indirizzo di spedizione
-                            </a>
-                        </h2>
-                    </div>
-
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="panel-body">
-                            <div class="wrap-custom-input">
-                                <input class="radio-custom-card" type="radio" id="delivery-address-available" name="delivery-address-client" value="delivery-address-available"/>
-                                <label class="radio-custom-card-label" for="delivery-address-available"></label>
-                                <label class="header-input" for="delivery-address-available">Utilizza il tuo indirizzo</label>
-                            </div>
-                            <address><p>Alice Lolli</p>
-                                <p>Via costozza</p>
-                                <p>40032 Camugnano (BO) - Italy</p>
-                                <p>Tel. 3347312434</p>
-                            </address>
-                            <div class="wrap-custom-input">
-                                <input class="radio-custom-card" type="radio" id="delivery-address-new" name="delivery-address-client" value="delivery-address-new"/>
-                                <label class="radio-custom-card-label" for="delivery-address-new"></label>
-                                <label class="header-input" for="delivery-address-new">Inserisci i dati di spedizione</label>
-                            </div>
-                            <div id="inputs-delivery-information">
-                                <div class="wrap-inputs col-md-6">
-                                    <label class="label-small" for="delivery-name-client">Nome:</label>
-                                    <input type="text" name="delivery-name-client" id="delivery-name-client"/>
-
-                                    <label class="label-small" for="delivery-address-client">Indirizzo:</label>
-                                    <input type="text" name="delivery-address-client" id="delivery-address-client"/>
-
-                                    <label class="label-small" for="delivery-city-client">Città:</label>
-                                    <input type="text" name="delivery-city-client" id="delivery-city-client"/>
-
-                                    <label class="label-small" for="delivery-state-client">Stato:</label>
-                                    <input type="text" name="delivery-state-client" id="delivery-state-client"/>
-
-                                    <label class="label-small" for="delivery-phone-client">Telefono:</label>
-                                    <input type="text" name="delivery-phone-client" id="delivery-phone-client"/>
-                                </div>
-
-                                <div class="wrap-inputs col-md-6">
-                                    <label class="label-small" for="delivery-surname-client">Cognome:</label>
-                                    <input type="text" name="delivery-surname-client" id="delivery-surname-client"/>
-
-                                    <label class="label-small" for="delivery-post-code-client">Cap:</label>
-                                    <input type="text" name="delivery-post-code-client" id="delivery-post-code-client"/>
-
-                                    <label class="label-small" for="delivery-province-client">Provincia:</label>
-                                    <input type="text" name="delivery-province-client" id="delivery-province-client"/>
+                                        <label class="label-small" for="province-client">Provincia:</label>
+                                        <input type="text" name="province-client" id="province-client"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h2 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="disabled" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span>4</span>Indirizzo di spedizione
+                                </a>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <div class="wrap-custom-input">
+                                    <input class="radio-custom-card" type="radio" id="delivery-address-available" name="delivery-address-client" value="delivery-address-available"/>
+                                    <label class="radio-custom-card-label" for="delivery-address-available"></label>
+                                    <label class="header-input" for="delivery-address-available">Utilizza il tuo indirizzo</label>
+                                </div>
+                                <address><p>Alice Lolli</p>
+                                    <p>Via costozza</p>
+                                    <p>40032 Camugnano (BO) - Italy</p>
+                                    <p>Tel. 3347312434</p>
+                                </address>
+                                <div class="wrap-custom-input">
+                                    <input class="radio-custom-card" type="radio" id="delivery-address-new" name="delivery-address-client" value="delivery-address-new"/>
+                                    <label class="radio-custom-card-label" for="delivery-address-new"></label>
+                                    <label class="header-input" for="delivery-address-new">Inserisci i dati di spedizione</label>
+                                </div>
+                                <div id="inputs-delivery-information">
+                                    <div class="wrap-inputs col-md-6">
+                                        <label class="label-small" for="delivery-name-client">Nome:</label>
+                                        <input type="text" name="delivery-name-client" id="delivery-name-client"/>
 
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFour">
-                        <h2 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="disabled" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                <span>5</span>Metodo di pagamento
-                            </a>
-                        </h2>
+                                        <label class="label-small" for="delivery-address-client">Indirizzo:</label>
+                                        <input type="text" name="delivery-address-client" id="delivery-address-client"/>
+
+                                        <label class="label-small" for="delivery-city-client">Città:</label>
+                                        <input type="text" name="delivery-city-client" id="delivery-city-client"/>
+
+                                        <label class="label-small" for="delivery-state-client">Stato:</label>
+                                        <input type="text" name="delivery-state-client" id="delivery-state-client"/>
+
+                                        <label class="label-small" for="delivery-phone-client">Telefono:</label>
+                                        <input type="text" name="delivery-phone-client" id="delivery-phone-client"/>
+                                    </div>
+                                    <div class="wrap-inputs col-md-6">
+                                        <label class="label-small" for="delivery-surname-client">Cognome:</label>
+                                        <input type="text" name="delivery-surname-client" id="delivery-surname-client"/>
+
+                                        <label class="label-small" for="delivery-post-code-client">Cap:</label>
+                                        <input type="text" name="delivery-post-code-client" id="delivery-post-code-client"/>
+
+                                        <label class="label-small" for="delivery-province-client">Provincia:</label>
+                                        <input type="text" name="delivery-province-client" id="delivery-province-client"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                        <div class="panel-body">
-                            <div class="wrap-custom-input">
-                                <input class="radio-custom-card" type="radio" name="payment-method" value="cash" id="cash"/>
-                                <label class="radio-custom-card-label" for="cash"></label>
-                                <label for="cash">
-                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>Pagamento alla consegna <b>(gratis)</b>
-                                    <span class="db">non paghi niente ora - pagherai soltanto al momento della consegna del pacco da te ordinato.</span>
-                                </label>
-                            </div>
-                            <div class="wrap-custom-input">
-                                <input class="radio-custom-card" type="radio" name="payment-method" value="card" id="card"/>
-                                <label class="radio-custom-card-label" for="card"></label>
-                                <label for="card"><i class="fa fa-credit-card" aria-hidden="true"></i>
-                                    Carta di credito <b>(gratis)</b>
-                                    <img src="img/payment-visa2.png" alt="visa"/>
-                                    <img src="img/payment-mc2.png" alt="mc"/>
-                                    <img src="img/payment-amex2.png" alt="am"/>
-                                    <span class="db">Per pagare con carta di credito verrai rediretto al sito di loviit <a href="#">(Anteprima sito)</a></span>
-                                </label>
-                            </div>
-                            <div class="wrap-custom-input">
-                                <input class="radio-custom-card" type="radio" name="payment-method" value="paypal" id="paypal"/>
-                                <label class="radio-custom-card-label" for="paypal"></label>
-                                <label for="paypal"><i class="fa fa-cc-paypal" aria-hidden="true"></i>
-                                    PayPal <b>(gratis)</b>
-                                    <img src="img/payment-paypal2.png" alt="paypal"/>
-                                    <span class="db">Per pagare con PayPal verrai rediretto al sito di PayPal <a href="#">(Anteprima sito)</a></span>
-                                </label>
-                            </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h2 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="disabled" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <span>5</span>Metodo di pagamento
+                                </a>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <div class="wrap-custom-input">
+                                    <input class="radio-custom-card" type="radio" name="payment-method" value="cash" id="cash"/>
+                                    <label class="radio-custom-card-label" for="cash"></label>
+                                    <label for="cash">
+                                        <i class="fa fa-file-text-o" aria-hidden="true"></i>Pagamento alla consegna <b>(gratis)</b>
+                                        <span class="db">non paghi niente ora - pagherai soltanto al momento della consegna del pacco da te ordinato.</span>
+                                    </label>
+                                </div>
+                                <div class="wrap-custom-input">
+                                    <input class="radio-custom-card" type="radio" name="payment-method" value="card" id="card"/>
+                                    <label class="radio-custom-card-label" for="card"></label>
+                                    <label for="card"><i class="fa fa-credit-card" aria-hidden="true"></i>
+                                        Carta di credito <b>(gratis)</b>
+                                        <img src="img/payment-visa2.png" alt="visa"/>
+                                        <img src="img/payment-mc2.png" alt="mc"/>
+                                        <img src="img/payment-amex2.png" alt="am"/>
+                                        <span class="db">Per pagare con carta di credito verrai rediretto al sito di loviit <a href="#">(Anteprima sito)</a></span>
+                                    </label>
+                                </div>
+                                <div class="wrap-custom-input">
+                                    <input class="radio-custom-card" type="radio" name="payment-method" value="paypal" id="paypal"/>
+                                    <label class="radio-custom-card-label" for="paypal"></label>
+                                    <label for="paypal"><i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                                        PayPal <b>(gratis)</b>
+                                        <img src="img/payment-paypal2.png" alt="paypal"/>
+                                        <span class="db">Per pagare con PayPal verrai rediretto al sito di PayPal <a href="#">(Anteprima sito)</a></span>
+                                    </label>
+                                </div>
 
-                            <div class="wrap-custom-input">
-                                <input class="radio-custom-card" type="radio" name="payment-method" value="bank-transfer" id="bank-transfer"/>
-                                <label class="radio-custom-card-label" for="bank-transfer"></label>
-                                <label for="bank-transfer">
-                                    <i class="fa fa-university" aria-hidden="true"></i>Bonifico bancario anticipato</label>
+                                <div class="wrap-custom-input">
+                                    <input class="radio-custom-card" type="radio" name="payment-method" value="bank-transfer" id="bank-transfer"/>
+                                    <label class="radio-custom-card-label" for="bank-transfer"></label>
+                                    <label for="bank-transfer">
+                                        <i class="fa fa-university" aria-hidden="true"></i>Bonifico bancario anticipato</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h2 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="disabled" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <span>6</span>Metodo di spedizione
+                                </a>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+
+                                <div class="wrap-custom-input">
+                                    <input class="radio-custom-card" type="radio" name="shipping-method" value="standart-shipping" id="standart-shipping"/>
+                                    <label class="radio-custom-card-label" for="standart-shipping"></label>
+                                    <label for="standart-shipping">
+                                        Corriere Standard  (9.90 €) - <span>Ricevi l'ordine entro 72 ore da oggi</span>
+                                    </label>
+                                </div>
+                                <div class="wrap-custom-input">
+                                    <input class="radio-custom-card" checked type="radio" name="shipping-method" value="express-shipping" id="express-shipping"/>
+                                    <label class="radio-custom-card-label" for="express-shipping"></label>
+                                    <label for="express-shipping">
+                                        Spedizione Urgente  (14.90 €) - <span>Ricevi l'ordine Domani. Valido per ordini effettuati entro le 13:00, lun-ven.</span>
+                                    </label>
+                                </div>
+                                <input class="big-yellow-btn pull-right" type="submit" value="Procedi"/>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingFive">
-                        <h2 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="disabled" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                <span>6</span>Metodo di spedizione
-                            </a>
-                        </h2>
-                    </div>
-                    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                        <div class="panel-body">
-
-                            <div class="wrap-custom-input">
-                                <input class="radio-custom-card" type="radio" name="shipping-method" value="standart-shipping" id="standart-shipping"/>
-                                <label class="radio-custom-card-label" for="standart-shipping"></label>
-                                <label for="standart-shipping">
-                                    Corriere Standard  (9.90 €) - <span>Ricevi l'ordine entro 72 ore da oggi</span>
-                                </label>
-                            </div>
-                            <div class="wrap-custom-input">
-                                <input class="radio-custom-card" checked type="radio" name="shipping-method" value="express-shipping" id="express-shipping"/>
-                                <label class="radio-custom-card-label" for="express-shipping"></label>
-                                <label for="express-shipping">
-                                    Spedizione Urgente  (14.90 €) - <span>Ricevi l'ordine Domani. Valido per ordini effettuati entro le 13:00, lun-ven.</span>
-                                </label>
-                            </div>
-                            <input class="big-yellow-btn pull-right" type="submit" value="Procedi"/>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
             </section>
         </form>
     </div>
