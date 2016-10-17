@@ -35,9 +35,6 @@ $(document).ready(function () {
     });
 
 
-
-
-
     /******menu-double-click********/
 
     $('.menu-home-products').click(function(event) {
@@ -157,24 +154,10 @@ $(document).ready(function () {
         selectorMain.removeAttr('disabled').next('*[group-radio-inputs]').attr("disabled", "");
         selectorMain.find('input:checked').removeAttr('checked');
 
-        /*****problem part****************************************/
-
-        /****способ 1*****/
-
-        $(this).closest('*[group-radio-inputs]').nextUntil('wrap-buy', 'div').find('*[value-input]').empty().append('Not selected');
-
-        /*****способ 2*****/
-//        selectorMain.find('*[value-input]').empty().append('Not selected');
-//        $('.wrap-selection[disabled] *[value-input]').empty().append('Not selected');
-
-
-        /*******end problem part***********************************/
+        $(this).closest('*[group-radio-inputs]').nextUntil('wrap-buy', 'div').find('*[value-input]').text('Not selected');
 
         var numberInput = $('.product-section form').find('input:radio:checked').length;
         var numberGroupRadio = $('.product-section form').find('*[group-radio-inputs]').length;
-
-        console.log(numberInput);
-        console.log(numberGroupRadio);
 
         if (numberInput >= numberGroupRadio) {
             $('.buy-btn').removeAttr('disabled');
@@ -195,15 +178,13 @@ $(document).ready(function () {
         }
     });
 
-
-
     /*************UP**************/
     $('#buttonUp').click(function() {
         $('html, body').animate({scrollTop: 0},500);
         return false;
     });
 
-
+    /*******slider product-page*********/
     $('.slider-product-page').bxSlider({
         infiniteLoop: false,
         hideControlOnEnd: true,
