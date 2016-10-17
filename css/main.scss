@@ -654,7 +654,7 @@ $white-color: #FFFFFF;
 .product-section {
   .slider-product-page {
     li {
-      height: 300px;
+      height: 225px;
       img {
         margin: 0 auto;
         height: 100%;
@@ -673,7 +673,7 @@ $white-color: #FFFFFF;
     padding-top: 10px;
   }
   .description-product-model {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300;
   }
   .popup-color-btn {
@@ -716,29 +716,16 @@ $white-color: #FFFFFF;
   .label-condition {
     font-size: 19px;
     margin: 10px 0;
-//    .information-condition {
-//      color: $white-color;
-//      background: $dark-gray-color;
-//      width: 20px;
-//      height: 20px;
-//      display: inline-block;
-//      border-radius: 50%;
-//      text-align: center;
-//      font-size: 16px;
-//      margin-left: 6px;
-//      margin-right: 6px;
-//    }
+    @media only screen and (max-width: 460px) {
+      font-size: 17px;
+    }
     .link-information-condition {
       font-size: 12px;
       text-decoration: underline !important;
-      @media only screen and (max-width: 460px) {
-        display: block;
-      }
     }
 
   }
   .wrap-color-inputs {
-//    display: inline-block;
     vertical-align: middle;
   }
   .selected-color, .selected-condition, .selected-number-product, .selected-wificell, .selected-size-watch {
@@ -963,6 +950,7 @@ $white-color: #FFFFFF;
     display: none;
     font-size: 16px;
     font-weight: 300;
+
     .price  {
       display: inline-block;
       font-weight: 300;
@@ -973,7 +961,12 @@ $white-color: #FFFFFF;
 
 .price-product.sale {
   color: red;
-  .old-price {display: inline;}
+  .old-price {
+    display: inline;
+    &:last-child {
+      display: block;
+    }
+  }
 }
 /*****************/
 
@@ -1596,7 +1589,9 @@ footer {
   }
   .social {
     li {
-      display: inline-block;
+      width: 25%;
+      float: left;
+      text-align: center;
     }
     .social-link {
       font-size: 20px;

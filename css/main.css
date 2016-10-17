@@ -494,7 +494,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   /*****colors******/
   /*****end-colors****/ }
   .product-section .slider-product-page li {
-    height: 300px; }
+    height: 225px; }
     .product-section .slider-product-page li img {
       margin: 0 auto;
       height: 100%;
@@ -508,7 +508,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     font-weight: 600;
     padding-top: 10px; }
   .product-section .description-product-model {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 300; }
   .product-section .popup-color-btn {
     width: 100%;
@@ -530,12 +530,12 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .product-section .label-condition {
     font-size: 19px;
     margin: 10px 0; }
+    @media only screen and (max-width: 460px) {
+      .product-section .label-condition {
+        font-size: 17px; } }
     .product-section .label-condition .link-information-condition {
       font-size: 12px;
       text-decoration: underline !important; }
-      @media only screen and (max-width: 460px) {
-        .product-section .label-condition .link-information-condition {
-          display: block; } }
   .product-section .wrap-color-inputs {
     vertical-align: middle; }
   .product-section .selected-color, .product-section .selected-condition, .product-section .selected-number-product, .product-section .selected-wificell, .product-section .selected-size-watch {
@@ -660,6 +660,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   color: red; }
   .price-product.sale .old-price {
     display: inline; }
+    .price-product.sale .old-price:last-child {
+      display: block; }
 
 /*****************/
 /**************************accordion-product-page********************/
@@ -1128,7 +1130,9 @@ footer {
       color: #FFFFFF;
       text-decoration: none; }
   footer .social li {
-    display: inline-block; }
+    width: 25%;
+    float: left;
+    text-align: center; }
   footer .social .social-link {
     font-size: 20px;
     text-decoration: none;
