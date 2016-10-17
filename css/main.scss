@@ -454,8 +454,8 @@ $white-color: #FFFFFF;
 }
 
 .our-advantages {
-  padding: 50px 0 0;
-  .container {
+  padding-top: 30px;
+  .wrap-section {
     background: $light-gray-color;
     padding: 20px;
   }
@@ -499,6 +499,10 @@ $white-color: #FFFFFF;
     font-size: 44px;
     color: $blue-color;
     font-weight: 600;
+    @media only screen and (max-width: 460px) {
+      font-size: 26px;
+      padding: 5px 5px 20px 5px;
+    }
   }
   .model.not-available a {
     pointer-events: none;
@@ -511,14 +515,15 @@ $white-color: #FFFFFF;
     .wrap-img-model {
       position: relative;
       display: block;
+      height: 140px;
       img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
       }
       span {
         position: absolute;
         top: -38px;
-        right: -4px;
+        right: 17px;
         color: $white-color;
         background: $blue-color;
         border-radius: 50%;
@@ -539,16 +544,11 @@ $white-color: #FFFFFF;
     }
   }
   @media only screen and (max-width: 460px) {
-    .col-xs-offset-2 {
-      margin-left: 0;
-    }
-    .model {
-      width: 100%;
+    .model.col-xs-4 {
       padding-left: 5px;
       padding-right: 5px;
-      padding-bottom: 30px;
       .wrap-img-model {
-        height: 120px;
+        height: 90px;
         img {
           width: auto;
           height: 100%;
@@ -557,15 +557,33 @@ $white-color: #FFFFFF;
           top: -20px;
           right: 50%;
           margin-right: -50px;
-          width: 50px;
-          height: 50px;
+          width: 60px;
+          height: 60px;
           text-align: center;
-          line-height: 50px;
-          font-size: 16px;
+          line-height: 60px;
+          font-size: 17px;
         }
       }
       .small-yellow-btn {
         padding: 5px;
+      }
+    }
+    .model.col-xs-3 {
+      .wrap-img-model {
+        height: 75px;
+        span {
+          top: -20px;
+          right: -8px;
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+          font-size: 14px;
+        }
+      }
+      .small-yellow-btn {
+        padding: 3px;
+        font-size: 14px;
       }
     }
   }
