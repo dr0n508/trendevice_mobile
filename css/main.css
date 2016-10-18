@@ -381,6 +381,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       font-size: 26px;
       padding: 5px 0;
       margin-bottom: 30px; } }
+.version-product h1.w {
+  margin-bottom: 10px; }
 .version-product .model.not-available a {
   pointer-events: none; }
 .version-product .model.col-xs-3 {
