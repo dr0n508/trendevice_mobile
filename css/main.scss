@@ -483,16 +483,17 @@ $white-color: #FFFFFF;
 
 .version-product {
   h1 {
-    background: url("../img/bg-iphone6.jpg") no-repeat 50% 0%;
-    background-size: cover;
-    padding: 20px 20px 40px 20px;
+//    background: url("../img/bg-iphone6.jpg") no-repeat 50% 0%;
+//    background-size: cover;
+    padding: 0 20px;
     margin-bottom: 50px;
     font-size: 44px;
     color: $blue-color;
     font-weight: 600;
     @media only screen and (max-width: 460px) {
       font-size: 26px;
-      padding: 5px 5px 20px 5px;
+      padding: 5px 0;
+      margin-bottom: 30px;
     }
   }
   .model.not-available a {

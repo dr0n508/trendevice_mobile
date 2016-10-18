@@ -161,7 +161,7 @@ $(document).ready(function () {
         selectorMain.removeAttr('disabled').next('*[group-radio-inputs]').attr("disabled", "");
         selectorMain.find('input:checked').removeAttr('checked');
 
-        $(this).closest('*[group-radio-inputs]').nextUntil('wrap-buy', 'div').find('*[value-input]').text('Not selected');
+        $(this).closest('*[group-radio-inputs]').nextUntil('wrap-buy', 'div').find('*[value-input]').text('Seleziona');
 
         var numberInput = $('.product-section form').find('input:radio:checked').length;
         var numberGroupRadio = $('.product-section form').find('*[group-radio-inputs]').length;

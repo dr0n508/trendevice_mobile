@@ -371,9 +371,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 /**********************************iphone6*******************************************/
 /************************************************************************************/
 .version-product h1 {
-  background: url("../img/bg-iphone6.jpg") no-repeat 50% 0%;
-  background-size: cover;
-  padding: 20px 20px 40px 20px;
+  padding: 0 20px;
   margin-bottom: 50px;
   font-size: 44px;
   color: #2889c2;
@@ -381,7 +379,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   @media only screen and (max-width: 460px) {
     .version-product h1 {
       font-size: 26px;
-      padding: 5px 5px 20px 5px; } }
+      padding: 5px 0;
+      margin-bottom: 30px; } }
 .version-product .model.not-available a {
   pointer-events: none; }
 .version-product .model.col-xs-3 {
