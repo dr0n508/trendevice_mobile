@@ -94,7 +94,7 @@ $white-color: #FFFFFF;
 .small-gray-btn {
   font-size: 16px;
   font-weight: 300;
-  padding: 5px 25px;
+  padding: 10px 25px;
   color: $white-color;
   background: $dark-gray-color;
   border: none;
@@ -891,43 +891,6 @@ $white-color: #FFFFFF;
 
   /*****end-colors****/
 
-//  .radio-custom-btn-label {
-//    font-size: 19px;
-//    background: $light-gray-color;
-//    font-weight: 400;
-//    padding: 5px 0;
-//    border: solid 1px $light-gray-color;
-//    width: 32.3%;
-//    text-align: center;
-//  }
-//  .radio-custom-btn-label {
-//    font-size: 19px;
-//    background: $light-gray-color;
-//    font-weight: 400;
-//    padding: 5px 0;
-//    border: solid 1px $light-gray-color;
-//    width: 32.3%;
-//    text-align: center;
-//  }
-//  .radio-custom-btn-label.wf {
-//    width: 49%;
-//  }
-
-
-//  .wrap-input-condition {
-//    margin-bottom: 30px;
-//  }
-
-
-//  label[for="number-product"] {
-//    font-size: 21px;
-//    font-weight: 400;
-//    margin: 10px 0;
-//  }
-  .wrap-buy {
-
-  }
-
   .buy-btn {
     text-transform: uppercase;
     border-radius: 7px;
@@ -1155,12 +1118,12 @@ $white-color: #FFFFFF;
       border: none;
       outline: none;
       margin: 10px 0;
-      padding: 8px 5px;
+      padding: 13px 5px;
     }
     a {
       color: $white-color;
       background: $dark-gray-color;
-      padding: 10px 20px;
+      padding: 14px 20px;
       &:hover {
         text-decoration: none;
       }
@@ -1222,7 +1185,7 @@ $white-color: #FFFFFF;
     border: none;
     font-size: 16px;
     margin: 4px 0;
-    padding: 8px;
+    padding: 12px;
   }
   address {
     margin-bottom: 10px;
