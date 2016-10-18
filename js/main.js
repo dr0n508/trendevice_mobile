@@ -155,6 +155,8 @@ $(document).ready(function () {
 
     $('.product-section form input').change(function() {
         var selectorMain = $(this).closest('*[group-radio-inputs]').next('*[group-radio-inputs]');
+        $('.modal').modal('hide');
+
 
         selectorMain.removeAttr('disabled').next('*[group-radio-inputs]').attr("disabled", "");
         selectorMain.find('input:checked').removeAttr('checked');
@@ -163,6 +165,8 @@ $(document).ready(function () {
 
         var numberInput = $('.product-section form').find('input:radio:checked').length;
         var numberGroupRadio = $('.product-section form').find('*[group-radio-inputs]').length;
+
+
 
         if (numberInput >= numberGroupRadio) {
             $('.buy-btn').removeAttr('disabled');
